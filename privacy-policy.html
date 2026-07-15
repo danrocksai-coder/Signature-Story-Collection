@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+  <meta
+    name="description"
+    content="Read the Signature Story Collection Privacy Policy to learn how we collect, use, protect, retain, and share information submitted by photographers, partners, and clients."
+  />
+
+  <title>Privacy Policy | Signature Story Collection</title>
+
+  <link rel="icon" type="image/jpeg" href="./signature-story-logo.jpg"/>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --charcoal: #171717;
+      --gold: #c9a96b;
+      --gold-light: #e0c48c;
+      --cream: #f8f5ee;
+      --muted: #b7b1a5;
+      --line: rgba(201, 169, 107, 0.3);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Montserrat", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--cream);
+      font-family: var(--sans);
+      line-height: 1.75;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px clamp(18px, 4vw, 60px);
+      background: rgba(10, 10, 10, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .brand img {
+      width: 68px;
+      height: 68px;
+      object-fit: contain;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .header-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .home-link {
+      padding: 10px 16px;
+      border: 1px solid var(--gold);
+    }
+
+    .home-link:hover {
+      background: var(--gold);
+      color: #111 !important;
+    }
+
+    .hero {
+      padding: 90px 22px 70px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(201, 169, 107, 0.16),
+          transparent 35%
+        ),
+        linear-gradient(145deg, #050505, #151515 55%, #080808);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: var(--gold-light);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      font-family: var(--serif);
+      line-height: 1.08;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0 auto 26px;
+      font-size: clamp(3.2rem, 8vw, 6.5rem);
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #d4cec2;
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .effective-date {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      color: var(--gold-light);
+      background: rgba(23, 23, 23, 0.75);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 55px;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 100px;
+    }
+
+    .policy-nav {
+      position: sticky;
+      top: 110px;
+      align-self: start;
+      padding: 25px;
+      border: 1px solid var(--line);
+      background: var(--charcoal);
+    }
+
+    .policy-nav strong {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--gold-light);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+    }
+
+    .policy-nav a {
+      display: block;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(201, 169, 107, 0.12);
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .policy-nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .policy-content {
+      min-width: 0;
+    }
+
+    .intro-box,
+    .contact-box {
+      padding: 30px;
+      border: 1px solid var(--gold);
+      background: linear-gradient(145deg, #1b1b1b, #101010);
+    }
+
+    .intro-box {
+      margin-bottom: 42px;
+    }
+
+    .intro-box p,
+    .contact-box p {
+      margin: 0;
+      color: #d2cabf;
+    }
+
+    .policy-section {
+      padding: 42px 0;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 110px;
+    }
+
+    .policy-section h2 {
+      margin-bottom: 18px;
+      color: var(--gold-light);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-weight: 600;
+    }
+
+    .policy-section h3 {
+      margin: 30px 0 10px;
+      font-size: 1.55rem;
+    }
+
+    .policy-section p,
+    .policy-section li {
+      color: var(--muted);
+    }
+
+    .policy-section ul {
+      margin: 18px 0;
+      padding-left: 22px;
+    }
+
+    .policy-section li {
+      margin: 10px 0;
+    }
+
+    .policy-section strong {
+      color: var(--cream);
+    }
+
+    .no-sale-box {
+      margin: 28px 0;
+      padding: 24px;
+      border-left: 3px solid var(--gold);
+      background: #151515;
+    }
+
+    .no-sale-box strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--gold-light);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+    }
+
+    .contact-box {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 14px;
+      color: var(--gold-light);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .contact-box a {
+      color: var(--gold-light);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 12px 23px;
+      border: 1px solid transparent;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .button-primary:hover {
+      background: var(--gold-light);
+    }
+
+    .button-secondary {
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 25px;
+      align-items: end;
+      padding: 42px clamp(22px, 6vw, 90px);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    footer strong,
+    footer span {
+      display: block;
+    }
+
+    footer strong {
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 1.45rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    footer p {
+      grid-column: 1 / -1;
+      margin: 8px 0 0;
+    }
+
+    @media (max-width: 850px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .policy-nav {
+        position: static;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .brand span {
+        display: none;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+      }
+
+      .header-links a:not(.home-link) {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 20px 55px;
+      }
+
+      .policy-layout {
+        width: min(100% - 30px, 1180px);
+        padding: 55px 0 75px;
+      }
+
+      .intro-box,
+      .contact-box,
+      .policy-nav {
+        padding: 24px 20px;
+      }
+
+      footer {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a
+      class="brand"
+      href="./index.html"
+      aria-label="Signature Story Collection homepage"
+    >
+      <img
+        src="./signature-story-logo.jpg"
+        alt="Signature Story Collection logo"
+      />
+      <span>Signature Story Collection</span>
+    </a>
+
+    <nav class="header-links" aria-label="Privacy page navigation">
+      <a href="#contact">Privacy Request</a>
+      <a class="home-link" href="./index.html">Return Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Your Information. Your Story. Your Trust.</div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        Signature Story Collection respects the personal information,
+        photographs, memories, and stories entrusted to us by photographers,
+        Certified Partners, clients, and website visitors.
+      </p>
+
+      <div class="effective-date">Effective July 15, 2026</div>
+    </section>
+
+    <div class="policy-layout">
+      <aside class="policy-nav" aria-label="Privacy Policy contents">
+        <strong>Policy Contents</strong>
+        <a href="#scope">1. Scope</a>
+        <a href="#information-collected">2. Information We Collect</a>
+        <a href="#how-used">3. How We Use Information</a>
+        <a href="#photographs-stories">4. Photographs and Stories</a>
+        <a href="#sharing">5. How Information Is Shared</a>
+        <a href="#third-parties">6. Third-Party Services</a>
+        <a href="#cookies">7. Cookies and Analytics</a>
+        <a href="#retention">8. Data Retention</a>
+        <a href="#security">9. Security</a>
+        <a href="#choices">10. Your Choices and Rights</a>
+        <a href="#california">11. California Privacy Rights</a>
+        <a href="#children">12. Children’s Privacy</a>
+        <a href="#international">13. International Visitors</a>
+        <a href="#changes">14. Policy Changes</a>
+        <a href="#contact">15. Contact Us</a>
+      </aside>
+
+      <article class="policy-content">
+        <div class="intro-box">
+          <p>
+            This Privacy Policy explains what information Signature Story
+            Collection collects, why it is collected, how it may be used or
+            shared, how long it may be retained, and the choices available to
+            you. By using this website or submitting information through one of
+            our forms, you acknowledge the practices described below.
+          </p>
+        </div>
+
+        <section class="policy-section" id="scope">
+          <h2>1. Scope of This Policy</h2>
+
+          <p>
+            This policy applies to information collected through
+            SignatureStoryCollection.com, related partner pages, territory
+            inquiry forms, future client story-submission forms, email, text
+            messages, telephone conversations, project communications, and
+            digital files submitted for a Signature Story Collection.
+          </p>
+
+          <p>
+            This policy covers information submitted by professional
+            photographers, prospective and active Certified Partners, their
+            clients, website visitors, and anyone communicating with Signature
+            Story Collection about a project or business relationship.
+          </p>
+        </section>
+
+        <section class="policy-section" id="information-collected">
+          <h2>2. Information We Collect</h2>
+
+          <h3>Information You Provide Directly</h3>
+
+          <p>Depending on how you interact with us, we may collect:</p>
+
+          <ul>
+            <li>Full name and business name</li>
+            <li>Email address and telephone number</li>
+            <li>City, state, ZIP code, and requested service area</li>
+            <li>Website, portfolio, and social-media links</li>
+            <li>Photography specialties and business information</li>
+            <li>Client names, relationships, milestones, memories, and stories</li>
+            <li>Music preferences, vocalist preferences, and creative direction</li>
+            <li>Details requested for inclusion or exclusion from a song</li>
+            <li>Photographs, logos, watermarks, signatures, and related files</li>
+            <li>Publication preferences, including public or unlisted YouTube delivery</li>
+            <li>Payment, billing, invoice, and transaction-related information</li>
+            <li>Questions, feedback, revision requests, and other communications</li>
+          </ul>
+
+          <h3>Information Collected Automatically</h3>
+
+          <p>
+            Basic technical information may be collected automatically by our
+            hosting provider or other service providers when you visit the
+            website. This may include an IP address, browser type, device type,
+            operating system, referring page, pages visited, and approximate
+            location derived from an IP address.
+          </p>
+
+          <p>
+            We do not currently use this website to collect sensitive financial
+            account credentials, government identification numbers, medical
+            records, or precise geolocation.
+          </p>
+        </section>
+
+        <section class="policy-section" id="how-used">
+          <h2>3. How We Use Information</h2>
+
+          <p>We may use collected information to:</p>
+
+          <ul>
+            <li>Review territory availability and partner applications</li>
+            <li>Contact prospective photographers about the Partner Program</li>
+            <li>Create and manage Certified Partner accounts and local pages</li>
+            <li>Communicate about orders, projects, revisions, billing, and delivery</li>
+            <li>Create personalized lyrics, songs, captions, artwork, and videos</li>
+            <li>Identify the appropriate photographer and client for a project</li>
+            <li>Provide YouTube links, MP3 files, videos, artwork, and other deliverables</li>
+            <li>Apply photography credits, partner branding, and service-area information</li>
+            <li>Provide customer support and resolve production issues</li>
+            <li>Prevent fraud, abuse, unauthorized access, or misuse</li>
+            <li>Maintain business, tax, accounting, legal, and transaction records</li>
+            <li>Improve our website, services, workflow, and Partner Program</li>
+            <li>Comply with applicable laws and enforce agreements</li>
+          </ul>
+        </section>
+
+        <section class="policy-section" id="photographs-stories">
+          <h2>4. Photographs, Stories, and Creative Materials</h2>
+
+          <p>
+            Signature Story Collection exists to transform a client’s story and
+            selected professional photographs into a personalized custom-written
+            song and cinematic photo story video.
+          </p>
+
+          <p>
+            Photographers and clients should submit only information,
+            photographs, and materials they are authorized to provide. The
+            person submitting materials is responsible for obtaining any
+            permissions necessary for production, delivery, and the selected
+            publication option.
+          </p>
+
+          <p>
+            Submitted photographs may be used to create the requested video,
+            artwork, lyric materials, previews, revisions, and final delivery
+            package. We preserve the photographer’s finished editing style.
+            Images may be lightly cropped or repositioned when needed for the
+            video format.
+          </p>
+
+          <p>
+            Public YouTube publication is used only when the applicable project
+            information and permissions authorize public publication. When an
+            unlisted option is selected and accepted before production, the
+            video is intended to be accessible primarily through its direct
+            link, although no internet-based delivery method can guarantee
+            absolute secrecy.
+          </p>
+        </section>
+
+        <section class="policy-section" id="sharing">
+          <h2>5. How Information Is Shared</h2>
+
+          <div class="no-sale-box">
+            <strong>We do not sell personal information.</strong>
+            <p>
+              Signature Story Collection does not sell names, email addresses,
+              phone numbers, client stories, photographs, or project information
+              to data brokers or unrelated marketers.
+            </p>
+          </div>
+
+          <p>
+            Information may be shared only as reasonably necessary with:
+          </p>
+
+          <ul>
+            <li>
+              The photographer or Certified Partner connected to the client’s
+              project
+            </li>
+            <li>
+              The client or authorized recipient connected to the completed
+              project
+            </li>
+            <li>
+              Service providers that support forms, hosting, email, storage,
+              payment processing, music production, video production, and
+              delivery
+            </li>
+            <li>
+              Professional advisers such as accountants, attorneys, insurers,
+              or consultants when reasonably necessary
+            </li>
+            <li>
+              Government authorities or other parties when required by law,
+              legal process, safety concerns, fraud prevention, or enforcement
+              of an agreement
+            </li>
+            <li>
+              A successor organization if the business is sold, merged,
+              reorganized, or transferred, subject to applicable legal
+              requirements
+            </li>
+          </ul>
+
+          <p>
+            Service providers receive only the information reasonably necessary
+            to perform their role and may maintain their own privacy policies
+            and security practices.
+          </p>
+        </section>
+
+        <section class="policy-section" id="third-parties">
+          <h2>6. Third-Party Services</h2>
+
+          <p>
+            Signature Story Collection uses or may use third-party services to
+            operate the website and deliver projects. These may include:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Netlify</strong> for website hosting, deployment, domain
+              services, and related technical operations
+            </li>
+            <li>
+              <strong>Formspree</strong> for receiving website form submissions
+            </li>
+            <li>
+              <strong>Google Fonts</strong> for website typography
+            </li>
+            <li>
+              <strong>YouTube and Google</strong> for video hosting, publication,
+              viewing, and delivery
+            </li>
+            <li>
+              <strong>Payment providers</strong> such as Stripe, PayPal, Cash
+              App, or Venmo when selected for a transaction
+            </li>
+            <li>
+              <strong>Email, cloud-storage, music, video, and creative software
+              providers</strong> used to communicate, produce, store, review, and
+              deliver projects
+            </li>
+          </ul>
+
+          <p>
+            When you interact with a third-party service, that provider may
+            collect or process information under its own terms and privacy
+            policy. Signature Story Collection does not control every action
+            taken by an independent third-party provider.
+          </p>
+        </section>
+
+        <section class="policy-section" id="cookies">
+          <h2>7. Cookies, Analytics, and Similar Technologies</h2>
+
+          <p>
+            The current website does not intentionally use advertising cookies
+            or behavioral advertising trackers operated by Signature Story
+            Collection.
+          </p>
+
+          <p>
+            Hosting providers, embedded services, form services, fonts, video
+            platforms, or other third-party tools may use cookies, logs, pixels,
+            or similar technologies for security, functionality, fraud
+            prevention, performance, or their own service operations.
+          </p>
+
+          <p>
+            If Signature Story Collection later adds analytics, advertising,
+            remarketing, or additional tracking technologies, this policy and
+            any required consent controls will be updated before or when those
+            tools are implemented.
+          </p>
+
+          <p>
+            You may control cookies through your browser settings. Disabling
+            certain technologies may affect website functionality.
+          </p>
+        </section>
+
+        <section class="policy-section" id="retention">
+          <h2>8. Data Retention</h2>
+
+          <p>
+            Information is retained only as long as reasonably necessary for the
+            purposes described in this policy, including project production,
+            delivery, customer support, partner administration, billing,
+            accounting, dispute resolution, fraud prevention, legal compliance,
+            and enforcement of agreements.
+          </p>
+
+          <p>
+            Territory inquiries that do not result in a partnership may be
+            retained for follow-up, recordkeeping, and future availability
+            discussions unless deletion is requested and no legal or operational
+            reason requires continued retention.
+          </p>
+
+          <p>
+            Project files and completed deliverables may be retained to support
+            downloads, corrections, revisions, replacement delivery, portfolio
+            records, and business continuity. Retention periods may vary based
+            on the project, storage provider, publication status, and legal
+            requirements.
+          </p>
+
+          <p>
+            When information is no longer reasonably needed, we may delete,
+            anonymize, or securely dispose of it. Backup copies may remain for a
+            limited period until overwritten through normal system processes.
+          </p>
+        </section>
+
+        <section class="policy-section" id="security">
+          <h2>9. Information Security</h2>
+
+          <p>
+            We use reasonable administrative, technical, and organizational
+            measures intended to protect information from unauthorized access,
+            loss, misuse, alteration, or disclosure.
+          </p>
+
+          <p>
+            However, no website, email account, cloud-storage platform, payment
+            system, or internet transmission can be guaranteed completely
+            secure. You should avoid sending unnecessary sensitive information
+            and should use secure file-sharing methods when instructed.
+          </p>
+        </section>
+
+        <section class="policy-section" id="choices">
+          <h2>10. Your Choices and Privacy Rights</h2>
+
+          <p>
+            Subject to applicable law and reasonable identity verification, you
+            may request to:
+          </p>
+
+          <ul>
+            <li>Know whether we maintain personal information about you</li>
+            <li>Access or receive a copy of certain personal information</li>
+            <li>Correct inaccurate or incomplete information</li>
+            <li>Delete information that is no longer required</li>
+            <li>Withdraw consent for future optional uses</li>
+            <li>Stop receiving nonessential promotional communications</li>
+            <li>Ask questions about how information has been used or shared</li>
+          </ul>
+
+          <p>
+            Some requests may be limited when information must be retained to
+            complete a project, process payment, maintain transaction records,
+            protect legal rights, prevent fraud, comply with law, or preserve
+            information already published with authorization.
+          </p>
+
+          <p>
+            To unsubscribe from promotional email, reply with “unsubscribe” or
+            use any available unsubscribe link. Transactional, project, billing,
+            security, and partnership communications may still be sent when
+            necessary.
+          </p>
+        </section>
+
+        <section class="policy-section" id="california">
+          <h2>11. California Privacy Rights</h2>
+
+          <p>
+            California residents may have additional rights under applicable
+            state privacy laws. Depending on the law and whether it applies to
+            Signature Story Collection, these rights may include requests to
+            know, access, correct, or delete personal information and to receive
+            information about certain disclosures.
+          </p>
+
+          <p>
+            Signature Story Collection does not sell personal information and
+            does not share personal information for cross-context behavioral
+            advertising as those terms are commonly used in California privacy
+            law.
+          </p>
+
+          <p>
+            We will not discriminate against a person for submitting a lawful
+            privacy request. We may need to verify identity and authority before
+            completing a request. An authorized agent may submit a request when
+            permitted by law, subject to appropriate verification.
+          </p>
+
+          <p>
+            California customers may also request information about certain
+            disclosures of personal information to third parties for their own
+            direct-marketing purposes. We do not disclose customer personal
+            information to unrelated third parties for their own direct
+            marketing.
+          </p>
+
+          <p>
+            Browser-based privacy signals, including Global Privacy Control,
+            will be evaluated and honored when legally required and technically
+            applicable to the services in use.
+          </p>
+        </section>
+
+        <section class="policy-section" id="children">
+          <h2>12. Children’s Privacy</h2>
+
+          <p>
+            This website and Partner Program are intended for adults and
+            professional businesses. We do not knowingly collect personal
+            information directly from children under 13 without appropriate
+            parental or legal-guardian authorization.
+          </p>
+
+          <p>
+            A parent, guardian, photographer, or authorized adult may submit
+            photographs or story details involving a child for a legitimate
+            family or client project. The submitting adult is responsible for
+            having the authority and permissions required to provide those
+            materials.
+          </p>
+
+          <p>
+            If you believe a child submitted personal information directly
+            without appropriate authorization, contact us so the situation can
+            be reviewed.
+          </p>
+        </section>
+
+        <section class="policy-section" id="international">
+          <h2>13. International Visitors</h2>
+
+          <p>
+            Signature Story Collection is operated from the United States.
+            Information submitted from another country may be processed,
+            stored, or accessed in the United States or other locations where
+            our service providers operate.
+          </p>
+
+          <p>
+            By submitting information, you understand that privacy laws and data
+            protections may differ from those in your country. Where additional
+            rights apply, requests may be submitted using the contact
+            information below.
+          </p>
+        </section>
+
+        <section class="policy-section" id="changes">
+          <h2>14. Changes to This Privacy Policy</h2>
+
+          <p>
+            We may update this Privacy Policy as the website, Partner Program,
+            production workflow, service providers, or legal requirements
+            change.
+          </p>
+
+          <p>
+            The revised policy will be posted on this page with an updated
+            effective date. Material changes may also be communicated through
+            the website, email, or another reasonable method when appropriate.
+          </p>
+        </section>
+
+        <section class="contact-box" id="contact">
+          <div class="eyebrow">Privacy Questions and Requests</div>
+
+          <h2>Contact Signature Story Collection</h2>
+
+          <p>
+            To ask a privacy question or submit an access, correction, or
+            deletion request, email:
+            <a href="mailto:partners@signaturestorycollection.com">
+              partners@signaturestorycollection.com
+            </a>
+          </p>
+
+          <p style="margin-top: 12px;">
+            Please include “Privacy Request” in the subject line and provide
+            enough information for us to identify the relevant inquiry,
+            partnership, or project. Do not send passwords, Social Security
+            numbers, full payment-card numbers, or other unnecessary sensitive
+            information.
+          </p>
+
+          <div class="button-row">
+            <a class="button button-primary" href="mailto:partners@signaturestorycollection.com?subject=Privacy%20Request">
+              Submit a Privacy Request
+            </a>
+
+            <a class="button button-secondary" href="./index.html">
+              Return to the Homepage
+            </a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Signature Story Collection™</strong>
+      <span>Every Beautiful Photograph Deserves a Beautiful Soundtrack.</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="./terms-of-service.html">Terms of Service</a>
+      <a href="mailto:partners@signaturestorycollection.com">Contact</a>
+    </div>
+
+    <p>
+      © <span id="year"></span> Signature Story Collection™. All rights
+      reserved.
+    </p>
+  </footer>
+
+  <script>
+    const year = document.getElementById("year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
