@@ -1,924 +1,4550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Help your photography clients preserve their memories with a personalized custom-written song and cinematic photo story video. Signature Story Collection handles the songwriting, production, and editing so you can offer a premium service with minimal extra work." name="description"/>
-<title>Signature Story Collection | Custom Songs &amp; Cinematic Videos for Photography Clients</title>
-<link rel="canonical" href="https://signaturestorycollection.com/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://signaturestorycollection.com/"/>
-<meta property="og:title" content="Signature Story Collection | Custom Songs &amp; Cinematic Videos for Photography Clients"/>
-<meta property="og:description" content="Give photography clients a personalized custom-written song and cinematic photo story video while Signature Story Collection handles the creative production."/>
-<meta property="og:image" content="https://signaturestorycollection.com/signature-story-logo.jpg"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Signature Story Collection"/>
-<meta name="twitter:description" content="A premium custom song and cinematic photo story video service built for professional photographers."/>
-<meta name="twitter:image" content="https://signaturestorycollection.com/signature-story-logo.jpg"/>
-<link rel="icon" type="image/jpeg" href="./signature-story-logo.jpg"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+  <meta
+    name="description"
+    content="Signature Story Collection helps professional photographers offer clients a personalized custom-written song and cinematic photo story video while we handle the complete creative production."
+  />
+
+  <meta
+    name="keywords"
+    content="photographer add-on service, custom song for photography clients, cinematic photo story video, photography business revenue, personalized client video, professional photographer partner program"
+  />
+
+  <meta name="author" content="Signature Story Collection"/>
+  <meta name="robots" content="index, follow"/>
+
+  <title>
+    Signature Story Collection | Custom Songs and Cinematic Videos for Photography Clients
+  </title>
+
+  <link
+    rel="canonical"
+    href="https://signaturestorycollection.com/"
+  />
+
+  <link
+    rel="icon"
+    type="image/jpeg"
+    href="./signature-story-logo.jpg"
+  />
+
+  <meta property="og:type" content="website"/>
+  <meta
+    property="og:url"
+    content="https://signaturestorycollection.com/"
+  />
+  <meta
+    property="og:title"
+    content="Signature Story Collection | Built for Professional Photographers"
+  />
+  <meta
+    property="og:description"
+    content="Offer clients a personalized custom-written song and cinematic photo story video while Signature Story Collection handles the creative production."
+  />
+  <meta
+    property="og:image"
+    content="https://signaturestorycollection.com/signature-story-logo.jpg"
+  />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta
+    name="twitter:title"
+    content="Signature Story Collection"
+  />
+  <meta
+    name="twitter:description"
+    content="A premium custom song and cinematic photo story video service built for professional photographers."
+  />
+  <meta
+    name="twitter:image"
+    content="https://signaturestorycollection.com/signature-story-logo.jpg"
+  />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+/* ============================================
+   Signature Story Collection — Design System
+   Palette: near-black ink, warm ivory paper, brass gold accent
+   Type: Cormorant Garamond (display) + Montserrat (body/UI)
+   Signature motif: film-strip perforation dividers — this
+   product literally turns photographs into video + song,
+   so the sprocket-hole rule stands in for "your photos, in motion."
+   ============================================ */
+
 :root {
-  --black: #0b0b0b;
-  --charcoal: #171717;
-  --gold: #c9a96b;
-  --gold-light: #e0c48c;
-  --cream: #f8f5ee;
-  --muted: #b7b1a5;
-  --line: rgba(201, 169, 107, .28);
-  --serif: "Cormorant Garamond", Georgia, serif;
-  --sans: "Montserrat", Arial, sans-serif;
+  --ink: #16140f;
+  --ink-soft: #2a2724;
+  --paper: #f7f2e9;
+  --paper-dim: #efe7d6;
+  --gold: #b98d4b;
+  --gold-light: #e4c98a;
+  --line: rgba(22, 20, 15, 0.14);
+  --line-on-dark: rgba(247, 242, 233, 0.16);
+  --text-muted: #c9c2b4;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --max-width: 1180px;
+  --radius: 2px;
 }
 
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   margin: 0;
-  background: var(--black);
-  color: var(--cream);
-  font-family: var(--sans);
-  line-height: 1.65;
+  background: var(--ink);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
-img { max-width: 100%; }
-a { color: inherit; text-decoration: none; }
-button, input, textarea { font: inherit; }
 
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  letter-spacing: 0.01em;
+  color: var(--paper);
+}
+
+h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 700; }
+h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+
+p { margin: 0 0 1em; color: var(--text-muted); }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 0.75em 1.25em;
+  z-index: 999;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* ---------- Signature motif: sprocket / film-strip rule ---------- */
+.section::before,
+.dark-section::before,
+.gold-panel::before {
+  content: "";
+  display: block;
+  height: 14px;
+  margin: 0 auto 3.5rem;
+  max-width: var(--max-width);
+  width: 100%;
+  background-image: radial-gradient(circle, var(--line-on-dark) 2.5px, transparent 2.6px);
+  background-size: 22px 14px;
+  background-position: center;
+  background-repeat: repeat-x;
+  opacity: 0.6;
+}
+.dark-section::before,
+.gold-panel::before {
+  background-image: radial-gradient(circle, var(--line-on-dark) 2.5px, transparent 2.6px);
+}
+.hero::before,
+.final-cta::before,
+.form-section::before,
+.legal-section::before { content: none; }
+
+/* ---------- Layout helpers ---------- */
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 5.5rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+.dark-eyebrow { color: var(--gold-light); }
+
+.section-heading { max-width: 760px; margin-bottom: 3rem; }
+.section-heading.centered { margin-left: auto; margin-right: auto; text-align: center; }
+.section-lead { color: var(--text-muted); font-size: 1.05rem; }
+
+.button {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  padding: 0.95em 2em;
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.button-primary {
+  background: var(--gold);
+  color: var(--ink);
+}
+.button-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+.button-secondary {
+  background: transparent;
+  color: var(--paper);
+  border-color: rgba(247, 242, 233, 0.45);
+}
+.button-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ---------- Header ---------- */
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px clamp(18px, 4vw, 60px);
-  background: rgba(10,10,10,.9);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(201,169,107,.3);
+  padding: 1.1rem 1.5rem;
+  background: rgba(18, 16, 14, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line-on-dark);
 }
 .brand {
   display: flex;
   align-items: center;
-  gap: 13px;
-  font-family: var(--serif);
-  font-size: 1.2rem;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: .03em;
+  font-size: 1.15rem;
+  color: var(--paper);
 }
-.brand img {
-  width: 68px;
-  height: 68px;
-  object-fit: contain;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-size: .78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-.nav a:hover { color: var(--gold-light); }
-.nav-cta { border: 1px solid var(--gold); padding: 10px 16px; border-radius: 3px; }
+.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+
 .menu-toggle {
   display: none;
   background: none;
   border: 1px solid var(--gold);
-  color: var(--cream);
-  padding: 9px 14px;
-}
-
-.hero {
-  min-height: 82vh;
-  position: relative;
-  display: grid;
-  place-items: center;
-  padding: 90px 22px;
-  background:
-    radial-gradient(circle at 20% 25%, rgba(201,169,107,.18), transparent 34%),
-    linear-gradient(125deg, #050505 0%, #151515 52%, #050505 100%);
-  overflow: hidden;
-}
-.hero::before, .hero::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(201,169,107,.15);
-  border-radius: 50%;
-}
-.hero::before { width: 620px; height: 620px; left: -230px; top: -220px; }
-.hero::after { width: 520px; height: 520px; right: -160px; bottom: -280px; }
-.hero-content { position: relative; z-index: 2; max-width: 1000px; text-align: center; }
-.eyebrow {
-  color: var(--gold-light);
-  text-transform: uppercase;
-  letter-spacing: .22em;
-  font-weight: 700;
-  font-size: .74rem;
-  margin-bottom: 18px;
-}
-.hero h1, h2, h3 { font-family: var(--serif); margin-top: 0; line-height: 1.05; }
-.hero h1 {
-  font-size: clamp(3rem, 7vw, 6.8rem);
-  margin-bottom: 28px;
+  color: var(--paper);
+  font-family: var(--font-body);
   font-weight: 600;
-}
-.hero-subhead {
-  max-width: 860px;
-  margin: 0 auto 22px;
-  color: #d4cec2;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-}
-.hero-tagline {
-  margin: 18px auto 32px;
-  color: var(--gold-light);
-  font-family: var(--serif);
-  font-size: clamp(1.45rem, 3vw, 2.2rem);
-  font-weight: 600;
-}
-.hero-actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 52px;
-  padding: 13px 25px;
-  border-radius: 3px;
-  font-size: .8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  border: 1px solid transparent;
+  font-size: 0.85rem;
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
   cursor: pointer;
 }
-.button-primary { background: var(--gold); color: #111; }
-.button-primary:hover { background: var(--gold-light); }
-.button-secondary { border-color: rgba(255,255,255,.35); color: var(--cream); }
-.button-secondary:hover { border-color: var(--gold); color: var(--gold-light); }
-.hero-note {
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.nav a { text-decoration: none; color: var(--text-muted); }
+.nav a:hover { color: var(--gold); }
+.nav-cta {
+  background: var(--ink);
+  color: var(--paper) !important;
+  padding: 0.55em 1.3em;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+.nav-cta:hover { background: var(--gold); color: var(--ink) !important; }
+
+@media (max-width: 860px) {
+  .menu-toggle { display: inline-block; }
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    border-bottom: 1px solid var(--line-on-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .nav.is-open { max-height: 480px; }
+  .nav a {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    border-top: 1px solid var(--line-on-dark);
+  }
+  .nav-cta { border-radius: 0; text-align: center; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 6.5rem 1.5rem 5rem;
   max-width: 900px;
-  margin: 25px auto 0;
-  font-size: .82rem;
-  color: var(--muted);
+  margin: 0 auto;
+  text-align: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  right: -320px;
+  top: 60px;
+  border: 1px solid rgba(201, 167, 105, 0.22);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 1; }
+.hero-subhead { font-size: 1.15rem; max-width: 680px; margin: 0 auto 1em; }
+.hero-value {
+  font-size: 1.05rem;
+  color: var(--paper);
+  font-weight: 500;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  padding: 1.4rem 2rem;
+  display: inline-block;
+}
+.hero-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin: 1.5rem 0 2.2rem;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.section { padding: 110px clamp(22px, 6vw, 90px); max-width: 1400px; margin: auto; }
-.section-heading { max-width: 850px; margin-bottom: 50px; }
-.section-heading.centered { text-align: center; margin-left: auto; margin-right: auto; }
-.section h2 { font-size: clamp(2.5rem, 5vw, 4.8rem); font-weight: 600; }
-.section-lead { max-width: 820px; margin: -20px auto 0; color: var(--muted); text-align: center; }
-.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; color: #c9c2b7; font-size: 1.06rem; }
-.dark-section { max-width: none; background: var(--charcoal); }
+/* ---------- Quick overview (condensed) ---------- */
+.quick-overview-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  justify-content: center;
+}
+.quick-overview-summary span {
+  flex: 1 1 220px;
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  padding: 1.2rem 1rem;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  background: var(--ink-soft);
+}
 
-.quick-overview { max-width:none; background:#0f0f0f; }
-.quick-grid {
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:12px;
-  max-width:1300px;
-  margin:0 auto;
+.partner-cta-box {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 2.5rem;
 }
-.quick-grid article {
-  border-top:2px solid var(--gold);
-  background:var(--charcoal);
-  padding:22px 16px;
-  min-height:220px;
-}
-.quick-grid strong {
-  display:block;
-  color:var(--gold-light);
-  font-family:var(--serif);
-  font-size:2.2rem;
-}
-.quick-grid span {
-  display:block;
-  margin-top:14px;
-  color:#d7d0c5;
-  font-size:.82rem;
-  line-height:1.55;
-}
+.partner-cta-box h3 { color: var(--gold-light); }
+.partner-cta-box p { color: rgba(247, 242, 233, 0.82); }
+
 .quick-profit {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  max-width:760px;
-  margin:38px auto 0;
-  border:1px solid var(--gold);
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
 }
-.quick-profit div { padding:22px; text-align:center; border-right:1px solid var(--line); }
-.quick-profit div:last-child { border-right:0; }
-.quick-profit span { display:block; color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; }
-.quick-profit strong { display:block; margin-top:8px; color:var(--gold-light); font-family:var(--serif); font-size:2rem; }
-.center-note { max-width:920px; margin:28px auto 0; text-align:center; color:var(--muted); }
+.quick-profit div span { display: block; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem; }
+.quick-profit div strong { font-family: var(--font-display); font-size: 1.8rem; color: var(--gold); }
+
+.center-note { text-align: center; max-width: 700px; margin: 0 auto; font-size: 0.92rem; }
+
+/* ---------- Quick grid (legacy 7-step, used in How It Works via .steps) ---------- */
+.quick-grid { display: none; } /* superseded by quick-overview-summary; kept hidden to preserve markup */
+
+/* ---------- Two-column & partner page preview ---------- */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+@media (max-width: 760px) { .two-column { grid-template-columns: 1fr; } }
 
 .partner-page-section {
   display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 90px;
 }
+@media (max-width: 900px) { .partner-page-section { grid-template-columns: 1fr; } }
+
 .sample-label {
-  display: inline-block;
-  margin-bottom: 14px;
-  color: var(--gold-light);
-  font-size: .72rem;
-  font-weight: 700;
-  letter-spacing: .18em;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
 }
-.mock-browser { border: 1px solid var(--line); background: #111; box-shadow: 0 26px 70px rgba(0,0,0,.45); }
-.browser-bar { padding: 13px; background: #262626; display: flex; align-items: center; gap: 8px; color: #aaa; font-size: .72rem; }
-.browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: #777; }
-.browser-bar span { margin-left: 12px; overflow: hidden; white-space: nowrap; }
-.browser-content { min-height: 390px; padding: 65px 30px; text-align: center; background: radial-gradient(circle at center, #29231a, #0a0a0a 66%); }
-.mock-logo { display: inline-block; border: 1px solid var(--gold); padding: 12px 20px; color: var(--gold); font-size: .75rem; letter-spacing: .2em; }
-.browser-content h3 { font-size: 2.5rem; margin: 38px 0 10px; }
-.browser-content p, .partner-copy p { color: var(--muted); }
-.browser-content button { background: var(--gold); border: 0; padding: 13px 20px; margin-top: 22px; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; }
-.photo-reassurance { margin-top: 26px; padding: 22px; border-left: 3px solid var(--gold); background: #151515; }
-.photo-reassurance strong { display: block; color: var(--gold-light); font-family: var(--serif); font-size: 1.55rem; margin-bottom: 8px; }
-.photo-reassurance p { margin: 0; }
-
-.revenue-section { max-width:none; background:linear-gradient(145deg,#171717,#090909); }
-.revenue-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; max-width:950px; margin:0 auto; }
-.revenue-grid article { border:1px solid var(--line); padding:35px; text-align:center; background:#121212; }
-.revenue-grid span { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; }
-.revenue-grid strong { display:block; margin:16px 0; font-family:var(--serif); color:var(--gold-light); font-size:4.2rem; }
-.revenue-grid p { color:#d1cabf; }
-
-.card-grid { max-width: 1220px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.feature-card { border: 1px solid var(--line); padding: 42px 32px; min-height: 330px; background: linear-gradient(145deg, #1b1b1b, #111); }
-.feature-number { color: var(--gold); font-size: .75rem; letter-spacing: .2em; }
-.feature-card h3 { font-size: 2rem; margin: 45px 0 20px; }
-.feature-card p { color: var(--muted); }
-.fine-print { max-width: 1000px; margin: 35px auto 0; text-align: center; color: #8f897f; font-size: .8rem; }
-
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.steps article { border-top: 1px solid var(--gold); padding-top: 24px; }
-.steps span { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold-light); font-weight: 700; }
-.steps h3 { font-size: 1.55rem; margin: 25px 0 12px; }
-.steps p { color: var(--muted); font-size: .9rem; }
-
-.gold-panel { max-width: none; background: var(--gold); color: #17130d; }
-.dark-eyebrow { color: #4d3e24; }
-.gold-panel h2 { color: #15120d; }
-.benefit-snapshot { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; max-width:1200px; margin:0 auto 45px; }
-.benefit-snapshot span { background:rgba(0,0,0,.13); border:1px solid rgba(0,0,0,.18); padding:15px; text-align:center; font-size:.78rem; }
-.benefit-snapshot strong { display:block; font-family:var(--serif); font-size:1.45rem; }
-.benefits-layout { max-width: 1220px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-.check-list { list-style: none; margin: 0; padding: 0; }
-.check-list li { position: relative; padding: 13px 0 13px 34px; border-bottom: 1px solid rgba(0,0,0,.15); font-weight: 600; }
-.check-list li::before { content: "✓"; position: absolute; left: 0; font-weight: 800; }
-
-.local-growth-section { max-width: none; background: #111; }
-.local-growth-grid, .transparency-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1180px; margin: 0 auto; }
-.local-growth-grid article, .transparency-grid article { border: 1px solid var(--line); background: var(--charcoal); padding: 34px 28px; }
-.local-growth-grid h3, .transparency-grid h3 { font-size: 1.85rem; margin-bottom: 15px; }
-.local-growth-grid p, .transparency-grid p, .rights-note p { color: var(--muted); }
-.seo-note, .rights-note { max-width: 1080px; margin: 30px auto 0; border-left: 3px solid var(--gold); background: #171717; padding: 22px 25px; color: #cfc7ba; font-size: .9rem; }
-
-.pricing-section { max-width: none; background: #101010; }
-.pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 1000px; margin: auto; }
-.price-card { position: relative; border: 1px solid var(--line); padding: 48px; background: var(--charcoal); }
-.price-card.featured { border-color: var(--gold); }
-.price-badge { position: absolute; top: 0; right: 0; background: var(--gold); color: #111; padding: 8px 13px; font-size: .67rem; font-weight: 700; text-transform: uppercase; }
-.price-card h3 { font-size: 2rem; }
-.price { font-family: var(--serif); font-size: 5.2rem; color: var(--gold-light); line-height: 1; margin: 30px 0; }
-.price sup { font-size: 2rem; }
-.price span { display: block; font-family: var(--sans); font-size: .78rem; color: var(--muted); margin-top: 10px; }
-.price-card p { color: var(--muted); }
-.suggested { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 30px; }
-.payment-note { max-width: 1000px; margin: 24px auto 0; color: var(--muted); font-size: .85rem; }
-.future-pricing-note { max-width: 1000px; margin: 24px auto 0; padding: 28px; border: 1px solid var(--line); background: #151515; }
-.future-pricing-note h3 { font-size: 1.8rem; margin-bottom: 12px; }
-.future-pricing-note p { color: var(--muted); margin: 8px 0; font-size: .86rem; }
-
-.transparency-section { max-width: none; background: linear-gradient(145deg, #171717, #090909); }
-.youtube-section { display: grid; grid-template-columns: 1fr .7fr; gap: 70px; align-items: center; }
-.youtube-section p { color: var(--muted); }
-.credit-card { border: 1px solid var(--gold); padding: 60px 30px; text-align: center; background: linear-gradient(145deg, #211c14, #0d0d0d); }
-.credit-card span, .credit-card small { display: block; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-size: .68rem; }
-.credit-card strong { display: block; font-family: var(--serif); font-size: 2.3rem; color: var(--gold-light); margin: 20px 0; }
-
-.partner-success-section { max-width: none; background: var(--charcoal); }
-.support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1180px; margin: 0 auto 50px; }
-.support-grid article { border-top: 2px solid var(--gold); background: #111; padding: 32px 28px; }
-.support-grid h3 { font-size: 1.8rem; }
-.support-grid p, .activity-policy p, .activity-policy li { color: var(--muted); }
-.activity-policy { max-width: 1000px; margin: auto; border: 1px solid var(--line); padding: 38px; background: #101010; }
-.activity-policy h3 { font-size: 2.2rem; }
-.activity-policy li { margin: 12px 0; }
-
-.rewards-section { max-width: none; background: linear-gradient(145deg, #0b0b0b, #1d1810); }
-.rewards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1180px; margin: 0 auto; }
-.reward-card { border: 1px solid var(--line); padding: 40px 30px; background: rgba(23,23,23,.94); }
-.featured-reward { border-color: var(--gold); transform: translateY(-10px); }
-.reward-level { display: block; color: var(--gold-light); text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; font-weight: 700; }
-.reward-card h3 { font-size: 2rem; margin: 28px 0 14px; }
-.reward-card strong { display: block; color: var(--gold-light); font-family: var(--serif); font-size: 1.8rem; margin-bottom: 18px; }
-.reward-card p, .rewards-terms p { color: var(--muted); }
-.rewards-terms { max-width: 1000px; margin: 34px auto 0; border-top: 1px solid var(--line); padding-top: 24px; font-size: .84rem; }
-
-.faq-section { max-width: none; background: var(--charcoal); }
-.faq-list { max-width: 980px; margin: auto; }
-details { border-bottom: 1px solid var(--line); }
-summary { cursor: pointer; padding: 24px 8px; font-family: var(--serif); font-size: 1.5rem; list-style: none; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; float: right; color: var(--gold); }
-details[open] summary::after { content: "–"; }
-details p { color: var(--muted); padding: 0 8px 24px; margin: 0; }
-
-.launch-kit-section { max-width:none; background:#111; }
-.launch-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; max-width:1180px; margin:0 auto; }
-.launch-grid article { border:1px solid var(--line); background:var(--charcoal); padding:32px 28px; }
-.launch-grid h3 { font-size:1.75rem; margin-bottom:14px; }
-.launch-grid p { color:var(--muted); }
-.launch-note { max-width:1080px; margin:30px auto 0; padding:24px; border-left:3px solid var(--gold); background:#171717; color:#d1cabf; }
-
-.guarantee-section { max-width: none; background: radial-gradient(circle at 20% 20%, rgba(201,169,107,.14), transparent 33%), #0d0d0d; }
-.guarantee-card { max-width: 1050px; margin: auto; border: 1px solid var(--gold); padding: 55px; background: rgba(20,20,20,.95); }
-.guarantee-card h2 { color: var(--gold-light); }
-.guarantee-card p { color: #c8c1b5; }
-.guarantee-card > strong { display: block; margin-top: 28px; color: var(--gold-light); font-family: var(--serif); font-size: 1.7rem; }
-
-.form-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: start; }
-.form-copy { position: sticky; top: 110px; }
-.form-copy p { color: var(--muted); }
-.form-points { display: grid; gap: 12px; margin-top: 35px; }
-.form-points span { border-left: 2px solid var(--gold); padding-left: 14px; font-size: .86rem; color: #cec6b8; }
-.territory-form { background: var(--cream); color: #161616; padding: 42px; border-radius: 4px; }
-.territory-form label { display: grid; gap: 8px; margin-bottom: 18px; font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
-.territory-form input, .territory-form textarea { width: 100%; border: 1px solid #cfc8ba; background: #fff; padding: 13px 14px; color: #111; border-radius: 2px; text-transform: none; letter-spacing: normal; }
-.territory-form input:focus, .territory-form textarea:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-row.three { grid-template-columns: 1.3fr .7fr .8fr; }
-.consent { grid-template-columns: auto 1fr !important; align-items: start; text-transform: none !important; letter-spacing: normal !important; font-weight: 500 !important; }
-.consent input { width: 18px; height: 18px; margin-top: 3px; }
-
-.consent a {
-  color: #725522;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.mock-browser {
+  border: 1px solid var(--line-on-dark);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -20px rgba(22, 20, 15, 0.25);
 }
-.consent a:hover {
-  color: #3f2d12;
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1rem;
+  background: var(--ink-soft);
+  border-bottom: 1px solid var(--line-on-dark);
 }
-
-.submit-button { width: 100%; border: 0; }
-.form-disclaimer { text-align: center; color: #706b62; font-size: .72rem; }
-
-.final-cta { max-width: 1400px; margin: 0 auto 90px; padding: 65px; display: grid; grid-template-columns: 190px 1fr; align-items: center; gap: 45px; border: 1px solid var(--line); background: linear-gradient(120deg, #171717, #080808); }
-.final-cta img { width: 190px; object-fit: contain; }
-.final-cta h2 { font-size: clamp(2.4rem, 5vw, 4.5rem); margin-bottom: 30px; }
-
-footer { border-top: 1px solid var(--line); padding: 45px clamp(22px, 6vw, 90px); color: var(--muted); display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: end; font-size: .78rem; }
-footer strong, footer span { display: block; }
-footer strong { color: var(--cream); font-family: var(--serif); font-size: 1.45rem; }
-.footer-links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: flex-end; }
-.footer-links a:hover { color: var(--gold-light); }
-footer p { grid-column: 1 / -1; margin: 10px 0 0; }
-
-
-.partner-cta-box {
-  max-width: 900px;
-  margin: 38px auto 0;
-  padding: 32px;
+.browser-bar i {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--line-on-dark); display: inline-block;
+}
+.browser-bar span {
+  margin-left: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+.browser-content {
+  padding: 3rem 2rem;
   text-align: center;
-  border: 1px solid var(--gold);
-  background: linear-gradient(145deg, #1b1b1b, #101010);
-  box-shadow: 0 18px 45px rgba(0,0,0,.28);
+  background: var(--ink);
+  color: var(--paper);
 }
-.partner-cta-box h3 {
-  margin-bottom: 14px;
+.mock-logo {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--line-on-dark);
+  padding: 0.5em 1.2em;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
   color: var(--gold-light);
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
 }
-.partner-cta-box p {
+.browser-content h3 { color: var(--paper); }
+.browser-content p { color: rgba(247, 242, 233, 0.7); font-size: 0.9rem; }
+.browser-content button {
+  margin-top: 1rem;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  padding: 0.8em 1.8em;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: default;
+}
+
+.photo-reassurance {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-left: 3px solid var(--gold);
+  background: var(--ink-soft);
+}
+.photo-reassurance strong { display: block; margin-bottom: 0.4rem; font-family: var(--font-display); font-size: 1.15rem; }
+
+/* ---------- Revenue / earnings ---------- */
+.revenue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 760px) { .revenue-grid { grid-template-columns: 1fr; } }
+.revenue-grid article {
+  text-align: center;
+  border: 1px solid var(--line-on-dark);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+}
+.revenue-grid span { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.revenue-grid strong { display: block; font-family: var(--font-display); font-size: 2.4rem; margin: 0.3rem 0; color: var(--paper); }
+.revenue-grid b { color: var(--gold); }
+
+/* ---------- Dark section (finished collection) ---------- */
+.dark-section {
+  background: var(--ink);
+  color: var(--paper);
+  padding-top: 5rem;
+  max-width: none;
+}
+.dark-section .section-heading,
+.dark-section .card-grid,
+.dark-section .fine-print { max-width: var(--max-width); margin-left: auto; margin-right: auto; }
+.dark-section p { color: rgba(247, 242, 233, 0.72); }
+.dark-section::before { max-width: var(--max-width); }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  padding: 0 1.5rem;
+}
+@media (max-width: 860px) { .card-grid { grid-template-columns: 1fr; } }
+.feature-card {
+  border: 1px solid var(--line-on-dark);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+.feature-number {
+  font-family: var(--font-display);
+  color: var(--gold);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.feature-card h3 { color: var(--paper); margin-top: 0.6rem; }
+.fine-print { font-size: 0.85rem; color: rgba(247, 242, 233, 0.55); padding: 2rem 1.5rem 0; }
+
+/* ---------- Steps (how it works) ---------- */
+.steps {
+  display: flex;
+  flex-direction: column;
   max-width: 720px;
-  margin: 0 auto 24px;
-  color: var(--muted);
+  margin: 0 auto;
+}
+.steps article {
+  border-top: 1px solid var(--line-on-dark);
+  padding: 2.5rem 0;
+}
+.steps article:first-child { border-top: none; padding-top: 0; }
+.steps span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.quick-grid article {
+  border-top: 2px solid var(--gold);
+  padding-top: 1rem;
 }
 
+/* ---------- Gold panel (partner benefits) ---------- */
+.gold-panel {
+  background: var(--ink-soft);
+  color: var(--paper);
+  max-width: none;
+  padding-top: 5rem;
+}
+.gold-panel .section-heading,
+.gold-panel .benefit-snapshot,
+.gold-panel .benefits-layout { max-width: var(--max-width); margin-left: auto; margin-right: auto; }
+.gold-panel::before { max-width: var(--max-width); }
 
+.benefit-snapshot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+.benefit-snapshot span {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 0.85rem;
+  color: rgba(247, 242, 233, 0.7);
+}
+.benefit-snapshot strong { font-family: var(--font-display); font-size: 1.8rem; color: var(--gold-light); }
+
+.benefits-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+@media (max-width: 760px) { .benefits-layout { grid-template-columns: 1fr; } }
+.check-list { list-style: none; margin: 0; padding: 0; }
+.check-list li {
+  padding: 0.7em 0 0.7em 1.6em;
+  border-bottom: 1px solid var(--line-on-dark);
+  position: relative;
+  font-size: 0.94rem;
+  color: rgba(247, 242, 233, 0.85);
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ---------- Local growth ---------- */
+.local-growth-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 860px) { .local-growth-grid { grid-template-columns: 1fr; } }
+.local-growth-grid article { padding: 1.75rem; border: 1px solid var(--line-on-dark); border-radius: var(--radius); }
+.seo-note {
+  background: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  padding: 1.2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Pricing ---------- */
+.founding-notice {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+}
+@media (max-width: 760px) { .pricing-grid { grid-template-columns: 1fr; } }
+.price-card {
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  text-align: center;
+}
+.price-card.featured { border-color: var(--gold); background: var(--ink-soft); }
+.price-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 0.35em 0.9em;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.price { font-family: var(--font-display); font-size: 3rem; margin: 0.4rem 0 1rem; }
+.price sup { font-size: 1.4rem; vertical-align: super; color: var(--gold); }
+.price span { display: block; font-family: var(--font-body); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.02em; }
+.suggested {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background: var(--ink-soft);
+  padding: 0.8em;
+  border-radius: var(--radius);
+}
+.payment-note, .future-pricing-note {
+  max-width: 780px;
+  margin: 0 auto 1.5rem;
+  font-size: 0.92rem;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  background: var(--ink-soft);
+}
+
+/* ---------- Transparency grid ---------- */
+.transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 860px) { .transparency-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .transparency-grid { grid-template-columns: 1fr; } }
+.transparency-grid article { padding: 1.5rem; border: 1px solid var(--line-on-dark); border-radius: var(--radius); }
+.transparency-grid h3 { font-size: 1.1rem; }
+.rights-note {
+  background: var(--ink-soft);
+  padding: 1.2rem 1.5rem;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+}
+
+/* ---------- YouTube / promotion ---------- */
+.youtube-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 5.5rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (max-width: 860px) { .youtube-section { grid-template-columns: 1fr; } }
+.credit-card {
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  background: var(--ink-soft);
+}
+.credit-card span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.credit-card strong { display: block; font-family: var(--font-display); font-size: 1.4rem; margin: 0.5rem 0; }
+.credit-card small { color: var(--text-muted); }
+
+/* ---------- Partner success ---------- */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 860px) { .support-grid { grid-template-columns: 1fr; } }
+.support-grid article { padding: 1.75rem; border: 1px solid var(--line-on-dark); border-radius: var(--radius); }
+.activity-policy {
+  background: var(--ink-soft);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+.activity-policy ol { padding-left: 1.2rem; }
+.activity-policy li { margin-bottom: 0.6rem; }
+
+/* ---------- Rewards ---------- */
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 860px) { .rewards-grid { grid-template-columns: 1fr; } }
+.reward-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+}
+.reward-card.featured-reward { border-color: var(--gold); background: var(--ink-soft); }
+.reward-level { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold); font-weight: 700; }
+.reward-card strong { display: block; font-family: var(--font-display); font-size: 1.8rem; margin: 0.5rem 0; }
+.rewards-terms {
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+}
+.rewards-terms p { font-size: 0.9rem; margin-bottom: 0.6em; }
+
+/* ---------- Launch kit ---------- */
+.launch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 860px) { .launch-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .launch-grid { grid-template-columns: 1fr; } }
+.launch-grid article { padding: 1.5rem; border: 1px solid var(--line-on-dark); border-radius: var(--radius); }
+.launch-note {
+  background: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  padding: 1.2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Guarantee ---------- */
+.guarantee-card {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 3rem 2.5rem;
+  border-radius: var(--radius);
+}
+.guarantee-card .eyebrow { color: var(--gold-light); }
+.guarantee-card p { color: rgba(247, 242, 233, 0.82); }
+.guarantee-card strong { display: block; margin-top: 1rem; color: var(--gold-light); font-family: var(--font-display); font-size: 1.2rem; }
+
+/* ---------- FAQ ---------- */
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-list details {
+  border-bottom: 1px solid var(--line-on-dark);
+  padding: 1.1rem 0;
+}
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.02rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--paper);
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after {
+  content: "+";
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-left: 1rem;
+}
+.faq-list details[open] summary::after { content: "–"; }
+.faq-list details p { margin-top: 0.8rem; }
+
+/* ---------- Form section ---------- */
+.form-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 5.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+}
+@media (max-width: 900px) { .form-section { grid-template-columns: 1fr; } }
+.form-points { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.5rem; }
+.form-points span {
+  font-size: 0.88rem;
+  padding-left: 1.4rem;
+  position: relative;
+  color: var(--text-muted);
+}
+.form-points span::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
+
+.territory-form {
+  background: var(--ink-soft);
+  padding: 2.25rem;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  border: 1px solid var(--line-on-dark);
+}
+.territory-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--paper);
+}
+.territory-form input,
+.territory-form textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.75em 0.9em;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 400;
+}
+.territory-form input:focus,
+.territory-form textarea:focus { border-color: var(--gold); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-row.three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 560px) {
+  .form-row, .form-row.three { grid-template-columns: 1fr; }
+}
+.consent {
+  flex-direction: row !important;
+  align-items: flex-start;
+  gap: 0.6rem !important;
+  font-weight: 400 !important;
+  font-size: 0.82rem !important;
+  color: var(--text-muted);
+}
+.consent input { width: auto; margin-top: 0.2rem; }
+.consent a { color: var(--gold); text-decoration: underline; }
+.submit-button { margin-top: 0.5rem; border: none; width: 100%; }
+.form-disclaimer { font-size: 0.78rem; color: var(--text-muted); margin: 0; }
+
+/* ---------- Final CTA ---------- */
+.final-cta {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: left;
+}
+.final-cta img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; }
+@media (max-width: 640px) {
+  .final-cta { flex-direction: column; text-align: center; }
+}
+
+/* ---------- Legal sections ---------- */
+.legal-section { max-width: 820px; }
+.legal-effective-date { font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-bottom: 2rem; }
+.legal-content h3 { font-size: 1.05rem; margin-top: 1.8rem; }
+.legal-content p { font-size: 0.94rem; }
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--ink);
+  color: rgba(247, 242, 233, 0.7);
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--line-on-dark);
+}
+footer strong { display: block; font-family: var(--font-display); font-size: 1.3rem; color: var(--paper); margin-bottom: 0.3rem; }
+footer > div:first-child { margin-bottom: 1.5rem; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+.footer-links a { text-decoration: none; color: rgba(247, 242, 233, 0.7); }
+.footer-links a:hover { color: var(--gold-light); }
+footer > p { font-size: 0.8rem; color: rgba(247, 242, 233, 0.45); margin: 0; }
+
+
+/* =========================================================
+   ORIGINAL SIGNATURE STORY COLLECTION DARK DESIGN OVERRIDE
+   ========================================================= */
+:root {
+  --ink: #0b0b0b;
+  --ink-soft: #171717;
+  --paper: #0b0b0b;
+  --paper-dim: #171717;
+  --gold: #c9a96b;
+  --gold-light: #e0c48c;
+  --cream: #f8f5ee;
+  --muted: #b7b1a5;
+  --line: rgba(201, 169, 107, 0.28);
+  --line-on-dark: rgba(201, 169, 107, 0.28);
+}
+html {
+  background: #0b0b0b;
+}
+body {
+  background: #0b0b0b;
+  color: #f8f5ee;
+}
+p {
+  color: #b7b1a5;
+}
+h1,
+h2,
+h3 {
+  color: #f8f5ee;
+}
+/* Remove the dotted film-strip dividers */
+.section::before,
+.dark-section::before,
+.gold-panel::before {
+  display: none !important;
+}
+/* ================= HEADER ================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 102px;
+  padding: 12px 34px;
+  background: rgba(8, 8, 8, 0.97);
+  border-bottom: 1px solid rgba(201, 169, 107, 0.34);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.brand {
+  color: #f8f5ee;
+}
+.brand img {
+  width: 110px;
+  height: 110px;
+  border-radius: 0;
+  object-fit: contain;
+}
+.brand span {
+  color: #f8f5ee;
+}
+.menu-toggle {
+  display: none;
+  padding: 12px 22px;
+  color: #f8f5ee;
+  background: transparent;
+  border: 1px solid #c9a96b;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav {
+  gap: 22px;
+}
+.nav a {
+  color: #d8d1c5;
+}
+.nav a:hover {
+  color: #e0c48c;
+}
+.nav-cta {
+  background: transparent;
+  color: #f8f5ee !important;
+  border: 1px solid #c9a96b;
+  border-radius: 0;
+}
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  max-width: none;
+  min-height: 82vh;
+  margin: 0;
+  padding: 150px 28px 125px;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 20% 28%,
+      rgba(201, 169, 107, 0.16),
+      transparent 33%
+    ),
+    linear-gradient(
+      125deg,
+      #050505 0%,
+      #151515 52%,
+      #050505 100%
+    );
+}
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  border: 1px solid rgba(201, 169, 107, 0.16);
+  border-radius: 50%;
+}
+.hero::before {
+  width: 620px;
+  height: 620px;
+  top: -230px;
+  left: -250px;
+}
+.hero::after {
+  width: 520px;
+  height: 520px;
+  right: -190px;
+  bottom: -290px;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.eyebrow {
+  color: #e0c48c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+.hero h1 {
+  max-width: 980px;
+  margin: 0 auto 34px;
+  color: #f8f5ee;
+  font-size: clamp(3.5rem, 8vw, 7.2rem);
+  font-weight: 600;
+  line-height: 0.98;
+}
+.hero-subhead {
+  max-width: 820px;
+  margin: 0 auto 30px;
+  color: #d7d0c5;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.75;
+}
 .hero-value {
   max-width: 820px;
-  margin: 0 auto 18px;
-  padding: 14px 18px;
-  color: var(--cream);
-  background: rgba(201,169,107,.09);
-  border: 1px solid rgba(201,169,107,.32);
-  font-size: clamp(.95rem, 1.6vw, 1.12rem);
+  margin: 0 auto 34px;
+  padding: 24px 26px;
+  color: #f8f5ee;
+  background: rgba(201, 169, 107, 0.08);
+  border: 1px solid rgba(201, 169, 107, 0.38);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 600;
 }
-.founding-notice {
-  max-width: 1000px;
-  margin: 0 auto 30px;
-  padding: 28px;
-  text-align: center;
-  border: 1px solid var(--gold);
-  background: linear-gradient(145deg, #1a1711, #101010);
+.hero-tagline {
+  margin: 28px auto 40px;
+  color: #e0c48c;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  font-style: normal;
+  font-weight: 600;
 }
-.founding-notice h3 {
-  margin-bottom: 12px;
-  color: var(--gold-light);
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
+.button {
+  min-height: 54px;
+  padding: 15px 27px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
-.founding-notice p {
-  margin: 8px auto;
-  max-width: 820px;
-  color: var(--muted);
+.button-primary {
+  background: #c9a96b;
+  color: #111;
 }
-
-@media (max-width: 1100px) {
-  .quick-grid { grid-template-columns: repeat(2, 1fr); }
-  .steps { grid-template-columns: repeat(2, 1fr); }
-  .benefit-snapshot { grid-template-columns: repeat(2, 1fr); }
+.button-primary:hover {
+  background: #e0c48c;
 }
+.button-secondary {
+  color: #f8f5ee;
+  border-color: rgba(255, 255, 255, 0.38);
+}
+.button-secondary:hover {
+  color: #e0c48c;
+  border-color: #c9a96b;
+}
+/* ================= GLOBAL SECTIONS ================= */
+.section {
+  max-width: 1400px;
+  padding: 105px clamp(22px, 6vw, 90px);
+  background: #0b0b0b;
+}
+.section-heading {
+  margin-bottom: 52px;
+}
+.section h2 {
+  color: #f8f5ee;
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+}
+.section-lead {
+  color: #b7b1a5;
+}
+/* ================= SHORT VERSION ================= */
+.quick-overview {
+  max-width: none;
+  background: #101010;
+}
+.quick-overview-summary {
+  display: none !important;
+}
+/* Restore the original seven process cards */
+.quick-grid {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.quick-grid article {
+  min-height: 220px;
+  padding: 24px 17px;
+  background: #171717;
+  border: 0;
+  border-top: 2px solid #c9a96b;
+}
+.quick-grid strong {
+  display: block;
+  color: #e0c48c;
+  font-family: var(--font-display);
+  font-size: 2.3rem;
+}
+.quick-grid span {
+  display: block;
+  margin-top: 18px;
+  color: #d7d0c5;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+.partner-cta-box {
+  max-width: 900px;
+  margin: 42px auto 0;
+  padding: 38px 34px;
+  color: #f8f5ee;
+  background: linear-gradient(145deg, #1b1b1b, #101010);
+  border: 1px solid #c9a96b;
+  border-radius: 0;
+}
+.partner-cta-box h3 {
+  color: #e0c48c;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.partner-cta-box p {
+  color: #b7b1a5;
+}
+.quick-profit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  max-width: 760px;
+  margin: 42px auto 0;
+  border: 1px solid #c9a96b;
+}
+.quick-profit div {
+  padding: 24px;
+  border-right: 1px solid rgba(201, 169, 107, 0.28);
+}
+.quick-profit div:last-child {
+  border-right: 0;
+}
+.quick-profit div span {
+  color: #b7b1a5;
+}
+.quick-profit div strong {
+  color: #e0c48c;
+  font-size: 2.2rem;
+}
+.center-note {
+  color: #b7b1a5;
+}
+/* ================= PARTNER PAGE PREVIEW ================= */
+.partner-page-section {
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+}
+.mock-browser {
+  background: #111;
+  border-color: rgba(201, 169, 107, 0.28);
+  border-radius: 0;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.48);
+}
+.browser-bar {
+  background: #262626;
+  border-color: rgba(201, 169, 107, 0.2);
+}
+.browser-bar span {
+  color: #aaa;
+}
+.browser-content {
+  min-height: 390px;
+  padding: 65px 30px;
+  background:
+    radial-gradient(circle at center, #29231a, #0a0a0a 66%);
+}
+.browser-content h3 {
+  color: #f8f5ee;
+  font-size: 2.6rem;
+}
+.browser-content p {
+  color: #b7b1a5;
+}
+.mock-logo {
+  color: #c9a96b;
+  border-color: #c9a96b;
+  border-radius: 0;
+}
+.photo-reassurance {
+  background: #151515;
+  border-left-color: #c9a96b;
+}
+.photo-reassurance strong {
+  color: #e0c48c;
+}
+.partner-copy p {
+  color: #b7b1a5;
+}
+/* ================= REVENUE ================= */
+.revenue-section {
+  max-width: none;
+  background: linear-gradient(145deg, #171717, #090909);
+}
+.revenue-grid article {
+  background: #121212;
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.revenue-grid span {
+  color: #b7b1a5;
+}
+.revenue-grid strong {
+  color: #e0c48c;
+}
+.revenue-grid p {
+  color: #d1cabf;
+}
+/* ================= FINISHED COLLECTION ================= */
+.dark-section {
+  max-width: none;
+  padding-top: 105px;
+  background: #171717;
+}
+.card-grid {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.feature-card {
+  min-height: 330px;
+  padding: 42px 32px;
+  background: linear-gradient(145deg, #1b1b1b, #111);
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.feature-number {
+  color: #c9a96b;
+}
+.feature-card h3 {
+  color: #f8f5ee;
+  font-size: 2rem;
+}
+.feature-card p {
+  color: #b7b1a5;
+}
+/* ================= FULL WORKFLOW ================= */
+.steps {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.steps article {
+  min-height: 280px;
+  padding: 24px;
+  background: #151515;
+  border-top: 2px solid #c9a96b;
+}
+.steps span {
+  color: #e0c48c;
+}
+.steps h3 {
+  color: #f8f5ee;
+}
+.steps p {
+  color: #b7b1a5;
+}
+/* ================= BENEFITS ================= */
+.gold-panel {
+  max-width: none;
+  padding-top: 105px;
+  color: #f8f5ee;
+  background: #171717;
+}
+.gold-panel h2,
+.gold-panel h3 {
+  color: #f8f5ee;
+}
+.gold-panel .eyebrow {
+  color: #e0c48c;
+}
+.benefit-snapshot span {
+  color: #b7b1a5;
+}
+.benefit-snapshot strong {
+  color: #e0c48c;
+}
+.check-list li {
+  color: #d7d0c5;
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.check-list li::before {
+  color: #c9a96b;
+}
+/* ================= CARDS AND PANELS ================= */
+.local-growth-grid article,
+.transparency-grid article,
+.support-grid article,
+.launch-grid article,
+.reward-card,
+.price-card {
+  background: #171717;
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.local-growth-grid h3,
+.transparency-grid h3,
+.support-grid h3,
+.launch-grid h3,
+.reward-card h3,
+.price-card h3 {
+  color: #f8f5ee;
+}
+.local-growth-grid p,
+.transparency-grid p,
+.support-grid p,
+.launch-grid p,
+.reward-card p,
+.price-card p {
+  color: #b7b1a5;
+}
+.seo-note,
+.rights-note,
+.activity-policy,
+.launch-note,
+.payment-note,
+.future-pricing-note,
+.rewards-terms {
+  color: #d1cabf;
+  background: #171717;
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.price-card.featured,
+.reward-card.featured-reward {
+  background: #1d1912;
+  border-color: #c9a96b;
+}
+.price {
+  color: #e0c48c;
+}
+.price span {
+  color: #b7b1a5;
+}
+.suggested {
+  color: #d1cabf;
+  background: #111;
+}
+/* ================= PROMOTION ================= */
+.credit-card {
+  color: #f8f5ee;
+  background: linear-gradient(145deg, #211c14, #0d0d0d);
+  border-color: #c9a96b;
+}
+.credit-card span,
+.credit-card small {
+  color: #b7b1a5;
+}
+.credit-card strong {
+  color: #e0c48c;
+}
+/* ================= GUARANTEE ================= */
+.guarantee-card {
+  background: #141414;
+  border: 1px solid #c9a96b;
+  border-radius: 0;
+}
+.guarantee-card h2 {
+  color: #e0c48c;
+}
+/* ================= FAQ ================= */
+.faq-list details {
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.faq-list summary {
+  color: #f8f5ee;
+}
+.faq-list details p {
+  color: #b7b1a5;
+}
+/* ================= FORM ================= */
+.form-section {
+  max-width: 1400px;
+  padding: 105px clamp(22px, 6vw, 90px);
+}
+.territory-form {
+  padding: 42px;
+  color: #f8f5ee;
+  background: #171717;
+  border: 1px solid rgba(201, 169, 107, 0.28);
+  border-radius: 4px;
+}
+.territory-form label {
+  color: #f8f5ee;
+}
+.territory-form input,
+.territory-form textarea {
+  color: #f8f5ee;
+  background: #0b0b0b;
+  border-color: rgba(201, 169, 107, 0.28);
+}
+.form-copy p,
+.form-points span {
+  color: #b7b1a5;
+}
+.consent {
+  color: #b7b1a5 !important;
+}
+.consent a {
+  color: #e0c48c;
+}
+/* ================= LEGAL CONTENT ================= */
+.legal-section {
+  max-width: 950px;
+}
+.legal-content {
+  padding: 34px;
+  background: #141414;
+  border: 1px solid rgba(201, 169, 107, 0.2);
+}
+.legal-content h3 {
+  color: #e0c48c;
+}
+.legal-content p {
+  color: #b7b1a5;
+}
+.legal-content a {
+  color: #e0c48c;
+}
+.legal-effective-date {
+  color: #8f897f;
+}
+/* ================= FINAL CTA AND FOOTER ================= */
+.final-cta {
+  max-width: 1400px;
+  margin: 0 auto 90px;
+  padding: 65px;
+  color: #f8f5ee;
+  background: linear-gradient(120deg, #171717, #080808);
+  border: 1px solid rgba(201, 169, 107, 0.28);
+}
+.final-cta img {
+  width: 180px;
+  height: 180px;
+  border-radius: 0;
+  object-fit: contain;
+}
+footer {
+  color: #b7b1a5;
+  background: #090909;
+  border-top: 1px solid rgba(201, 169, 107, 0.28);
+}
+footer strong {
+  color: #f8f5ee;
+}
+.footer-links a {
+  color: #b7b1a5;
+}
+/* ================= MOBILE — MATCH ORIGINAL SCREENSHOTS ================= */
 @media (max-width: 1000px) {
-  .menu-toggle { display: block; }
-  .nav {
-    display: none;
-    position: absolute;
-    top: 89px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px;
-    background: #101010;
-    border-bottom: 1px solid var(--line);
+  .menu-toggle {
+    display: inline-block;
   }
-  .nav.open { display: flex; }
-  .nav a { padding: 10px; }
-  .partner-page-section, .youtube-section, .form-section { grid-template-columns: 1fr; }
-  .form-copy { position: static; }
-}
-@media (max-width: 900px) {
-  .rewards-grid, .support-grid, .local-growth-grid, .transparency-grid { grid-template-columns: 1fr; }
-  .featured-reward { transform: none; }
-  .guarantee-card, .activity-policy { padding: 30px 22px; }
+  .brand span {
+    display: none;
+  }
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    max-height: none;
+    padding: 18px;
+    background: #101010;
+    border-bottom: 1px solid rgba(201, 169, 107, 0.28);
+  }
+  .nav.is-open {
+    display: flex;
+  }
+  .nav a {
+    color: #f8f5ee;
+    border-color: rgba(201, 169, 107, 0.18);
+  }
 }
 @media (max-width: 760px) {
-  .brand span { display: none; }
-  .brand img { width: 58px; height: 58px; }
-  .hero { min-height: 75vh; padding-top: 80px; }
-  .two-column, .card-grid, .benefits-layout, .pricing-grid, .revenue-grid, .launch-grid, .quick-grid, .quick-profit, .steps, .benefit-snapshot { grid-template-columns: 1fr; }
-  .quick-profit div { border-right:0; border-bottom:1px solid var(--line); }
-  .quick-profit div:last-child { border-bottom:0; }
-  .section { padding: 78px 20px; }
-  .price-card, .territory-form { padding: 30px 22px; }
-  .form-row, .form-row.three { grid-template-columns: 1fr; gap: 0; }
-  .final-cta { margin: 0 20px 60px; padding: 35px 24px; grid-template-columns: 1fr; text-align: center; }
-  .final-cta img { margin: auto; width: 140px; }
-  footer { grid-template-columns: 1fr; }
-  .footer-links { flex-wrap: wrap; justify-content: flex-start; }
+  .site-header {
+    min-height: 118px;
+    padding: 18px 34px;
+  }
+  .brand img {
+    width: 110px;
+    height: 110px;
+  }
+  .menu-toggle {
+    min-width: 145px;
+    padding: 17px 20px;
+    font-size: 1.1rem;
+  }
+  .hero {
+    min-height: auto;
+    padding: 145px 26px 125px;
+  }
+  .hero h1 {
+    font-size: clamp(3.2rem, 14vw, 5.4rem);
+    line-height: 0.96;
+  }
+  .hero-subhead {
+    font-size: 1.18rem;
+    line-height: 1.75;
+  }
+  .hero-value {
+    padding: 27px 24px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .hero-tagline {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-actions .button {
+    width: 100%;
+  }
+  .section {
+    padding: 90px 44px;
+  }
+  .section h2 {
+    font-size: clamp(3rem, 12vw, 4.6rem);
+    line-height: 1.04;
+  }
+  .quick-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .quick-grid article {
+    min-height: 470px;
+    padding: 58px 36px;
+  }
+  .quick-grid strong {
+    font-size: 3rem;
+  }
+  .quick-grid span {
+    margin-top: 70px;
+    font-size: 1.13rem;
+    line-height: 1.7;
+  }
+  .partner-cta-box {
+    padding: 48px 30px;
+  }
+  .partner-cta-box h3 {
+    font-size: 3rem;
+  }
+  .partner-cta-box p {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+  .quick-profit {
+    grid-template-columns: 1fr;
+  }
+  .quick-profit div {
+    border-right: 0;
+    border-bottom: 1px solid rgba(201, 169, 107, 0.28);
+  }
+  .quick-profit div:last-child {
+    border-bottom: 0;
+  }
+  .partner-page-section,
+  .youtube-section,
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .steps article {
+    min-height: auto;
+  }
+  .card-grid,
+  .revenue-grid,
+  .local-growth-grid,
+  .transparency-grid,
+  .support-grid,
+  .rewards-grid,
+  .launch-grid,
+  .pricing-grid,
+  .benefits-layout {
+    grid-template-columns: 1fr;
+  }
+  .benefit-snapshot {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .final-cta {
+    margin: 0 20px 70px;
+    padding: 45px 28px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .final-cta img {
+    width: 140px;
+    height: 140px;
+  }
+  .legal-content {
+    padding: 25px 22px;
+  }
 }
-</style>
+
+
+/* FINAL LAYOUT CORRECTIONS */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: none;
+  margin: 0;
+}
+.steps article {
+  min-height: 280px;
+  padding: 28px 24px;
+  background: #151515;
+  border-top: 2px solid #c9a96b;
+}
+.steps article:first-child {
+  padding-top: 28px;
+  border-top: 2px solid #c9a96b;
+}
+@media (max-width: 1000px) {
+  .quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 105px;
+    padding: 12px 24px;
+  }
+  .brand img {
+    width: 82px;
+    height: 82px;
+  }
+  .menu-toggle {
+    min-width: 120px;
+    padding: 14px 18px;
+    font-size: 1rem;
+  }
+  .hero {
+    padding: 105px 24px 100px;
+  }
+  .hero h1 {
+    font-size: clamp(3rem, 13vw, 4.7rem);
+  }
+  .section {
+    padding: 80px 24px;
+  }
+  .section h2 {
+    font-size: clamp(2.6rem, 11vw, 4rem);
+  }
+  .quick-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .quick-grid {
+    gap: 18px;
+  }
+  .quick-grid article {
+    min-height: 290px;
+    padding: 36px 28px;
+  }
+  .quick-grid strong {
+    font-size: 2.8rem;
+  }
+  .quick-grid span {
+    margin-top: 38px;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .steps article {
+    min-height: auto;
+    padding: 30px 26px;
+  }
+}
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Signature Story Collection",
+    "url": "https://signaturestorycollection.com/",
+    "logo": "https://signaturestorycollection.com/signature-story-logo.jpg",
+    "image": "https://signaturestorycollection.com/signature-story-logo.jpg",
+    "description": "Signature Story Collection helps professional photographers offer clients a personalized custom-written song and cinematic photo story video.",
+    "founder": {
+      "@type": "Person",
+      "name": "Dan Rock"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "email": "partners@signaturestorycollection.com",
+    "serviceType": [
+      "Custom Song Production",
+      "Cinematic Photo Story Video Production",
+      "Photographer Partner Program"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-<header class="site-header">
-<a aria-label="Signature Story Collection home" class="brand" href="#top">
-<img alt="Signature Story Collection logo" src="./signature-story-logo.jpg"/>
-<span>Signature Story Collection</span>
-</a>
-<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">Menu</button>
-<nav aria-label="Primary navigation" class="nav">
-<a href="#how-it-works">How It Works</a>
-<a href="#benefits">Partner Benefits</a>
-<a href="#local-growth">Local Pages</a>
-<a href="#revenue">Earnings</a>
-<a href="#pricing">Pricing</a>
-<a href="#partner-success">Support</a>
-<a href="#rewards">Rewards</a>
-<a href="#launch-kit">Marketing Kit</a>
-<a href="#faq">FAQ</a>
-<a class="nav-cta" href="#territory-form">Check Territory</a>
-</nav>
-</header>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
-<main id="top">
-<section class="hero">
-<div class="hero-content">
-<div class="eyebrow">Built for Professional Photographers</div>
-<h1>Offer Something No Other Photographer Can</h1>
-<p class="hero-subhead">A personalized, custom-written song professionally paired with your client’s favorite photos to tell their story in a cinematic video they’ll watch, share, and cherish for years to come.</p>
-<p class="hero-value">Turn every photo session into an opportunity to earn an additional $50–$150+ with very little extra time or effort.</p>
-<p class="hero-tagline">You capture the moments. We handle the rest.</p>
-<div class="hero-actions">
-<a class="button button-secondary" href="#quick-overview">See the 60-Second Overview</a>
-</div>
-</div>
-</section>
+  <header class="site-header" id="top">
+    <a
+      class="brand"
+      href="#top"
+      aria-label="Signature Story Collection homepage"
+    >
+      <img
+        src="./signature-story-logo.jpg"
+        alt="Signature Story Collection logo"
+      />
 
-<section class="section quick-overview" id="quick-overview">
-<div class="section-heading centered">
-<div class="eyebrow">The Short Version</div>
-<h2>One protected territory. One simple process. One new revenue stream.</h2>
-</div>
-<div class="quick-grid">
-<article><strong>1</strong><span>At the end of the photo session, offer Signature Story Collection as a premium add-on.</span></article>
-<article><strong>2</strong><span>If the client says yes, send them your dedicated page, such as SignatureStoryCollection.com/YourName.</span></article>
-<article><strong>3</strong><span>The client completes a simple form with names, memories, important details, music preferences, and anything to include or avoid.</span></article>
-<article><strong>4</strong><span>At the end of your editing process, have the customer select between 1 and 20 finished photographs for their Signature Story Collection.</span></article>
-<article><strong>5</strong><span>You submit the client-approved photographs through the designated upload or delivery method.</span></article>
-<article><strong>6</strong><span>We create the personalized song, cinematic video, lyric captions, cover artwork, and complete digital package.</span></article>
-<article><strong>7</strong><span>You review the finished collection, deliver it to your client, and keep everything above the $50 production fee.</span></article>
-</div>
-<div class="partner-cta-box">
-<h3>What Becoming a Partner Means</h3>
-<p>You receive a protected local territory, your own client submission page, partner marketing materials, and access to our $50 production rate. You offer the service, your client submits their story and selected photos, and we handle the complete creative production.</p>
-<a class="button button-primary" href="#territory-form">Check My Territory</a>
-</div>
-<div class="quick-profit">
-<div><span>Your Price</span><strong>$150</strong></div>
-<div><span>Production</span><strong>− $50</strong></div>
-<div><span>Your Gross Profit</span><strong>$100</strong></div>
-</div>
-<p class="center-note">Founding certification: $25 per year for the first 100 approved partners, grandfathered with on-time renewal. Certified Partner production rate: $50. Standard collection: 1–20 professional photos. Your editing style remains intact, with only minor 16:9 cropping or repositioning when necessary.</p>
-</section>
+      <span>Signature Story Collection</span>
+    </a>
 
-<section class="section partner-page-section">
-<div>
-<div class="sample-label">Sample Partner Page</div>
-<div class="mock-browser">
-<div class="browser-bar"><i></i><i></i><i></i><span>SignatureStoryCollection.com/YourName</span></div>
-<div class="browser-content">
-<div class="mock-logo">Example Partner Logo</div>
-<h3>Coastal Light Photography</h3>
-<p>Certified Signature Story Collection™ Partner • Serving Oxnard, Port Hueneme &amp; Ventura</p>
-<button type="button">Begin Your Signature Story</button>
-</div>
-</div>
-</div>
-<div class="partner-copy">
-<div class="eyebrow">This Is What You Receive</div>
-<h2>Every Certified Partner receives a professional local landing page.</h2>
-<p>Your page can feature your logo, portfolio images, business information, service area, Certified Partner status, and a direct client story-submission form.</p>
-<p>When a client says yes, send one link. They complete the form, you send 1–20 selected photos, and we handle the song, captions, video, artwork, and final delivery package.</p>
-<p>This example shows how a real local page could look. Each live partner page will use the photographer’s actual business name, portfolio, location, and service details.</p>
-<div class="photo-reassurance">
-<strong>Your Photos Stay Your Photos</strong>
-<p>We preserve your finished editing style. Aside from minor cropping or repositioning when required for 16:9, your images are presented as delivered.</p>
-</div>
-</div>
-</section>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+      aria-label="Open navigation menu"
+    >
+      Menu
+    </button>
 
-<section class="section revenue-section" id="revenue">
-<div class="section-heading centered">
-<div class="eyebrow">Simple Additional Revenue</div>
-<h2>You decide the retail price. We charge a flat $50 production fee.</h2>
-</div>
-<div class="revenue-grid">
-<article><span>Example Retail Price</span><strong>$100</strong><p>Your gross profit: <b>$50</b></p></article>
-<article><span>Example Retail Price</span><strong>$150</strong><p>Your gross profit: <b>$100</b></p></article>
-<article><span>Example Retail Price</span><strong>$200</strong><p>Your gross profit: <b>$150</b></p></article>
-</div>
-<p class="center-note">Bundle it into a premium wedding, family, maternity, newborn, senior, anniversary, memorial, or portrait package—or offer it as a standalone upgrade.</p>
-</section>
+    <nav
+      class="nav"
+      id="primary-navigation"
+      aria-label="Primary navigation"
+    >
+      <a href="#how-it-works">How It Works</a>
+      <a href="#partner-benefits">Partner Benefits</a>
+      <a href="#earnings">Earnings</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#partner-support">Support</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#faq">FAQ</a>
 
-<section class="section intro">
-<div class="section-heading">
-<div class="eyebrow">A New Revenue Stream</div>
-<h2>Give clients something they cannot get from another photographer.</h2>
-</div>
-<div class="two-column">
-<p>Your clients already trust you to preserve the most meaningful moments of their lives. Signature Story Collection helps you extend that experience through a personalized original song and cinematic photo story video created from their story and your professional images.</p>
-<p>You remain the trusted face of the experience. We work behind the scenes as your creative production partner, handling the storytelling, songwriting, editing, artwork, and final digital assets.</p>
-</div>
-</section>
+      <a
+        class="nav-cta"
+        href="#territory-form"
+      >
+        Check Territory
+      </a>
+    </nav>
+  </header>
 
-<section class="section dark-section">
-<div class="section-heading centered">
-<div class="eyebrow">The Finished Collection</div>
-<h2>Premium, personal, and easy to deliver.</h2>
-</div>
-<div class="card-grid">
-<article class="feature-card"><span class="feature-number">01</span><h3>Original Musical Story</h3><p>A personalized song built from the client’s names, memories, milestones, preferred emotion, and music direction.</p></article>
-<article class="feature-card"><span class="feature-number">02</span><h3>Cinematic Photo Story Video</h3><p>A polished film using up to 20 professional photographs, clean transitions, lyrics, and partner photography credit.</p></article>
-<article class="feature-card"><span class="feature-number">03</span><h3>Complete Digital Package</h3><p>Shareable YouTube link, HD video, MP3 audio, cover artwork, and printable lyric artwork.</p></article>
-</div>
-<p class="fine-print">Advanced animation, special effects, extensive restoration, or nonstandard production requests are reviewed and quoted separately.</p>
-</section>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="eyebrow">
+          Built for Professional Photographers
+        </div>
 
-<section class="section" id="how-it-works">
-<div class="section-heading centered">
-<div class="eyebrow">Simple Workflow</div>
-<h2>You sell it. We build it. You deliver it.</h2>
-</div>
-<div class="steps">
-<article><span>1</span><h3>Offer It After the Session</h3><p>Introduce Signature Story Collection as a premium add-on at the end of the photo session, while the experience is still fresh and the client is still with you.</p></article>
-<article><span>2</span><h3>Share Your Personal Link</h3><p>When the client says yes, send your dedicated page by text, email, QR code, or gallery message, such as SignatureStoryCollection.com/YourName.</p></article>
-<article><span>3</span><h3>The Client Tells Their Story</h3><p>The client completes a simple form with names, memories, important details, music direction, and anything they want included or avoided.</p></article>
-<article><span>4</span><h3>Have the Client Select Their Photos</h3><p>After you complete your normal editing process, have the customer select between 1 and 20 finished photographs for their Signature Story Collection.</p></article>
-<article><span>5</span><h3>Submit the Final Images</h3><p>Send the selected professional photographs through the approved upload or delivery method.</p></article>
-<article><span>6</span><h3>We Create the Experience</h3><p>We write the personalized song, produce the audio, assemble the cinematic video, add captions, and prepare the complete digital package.</p></article>
-<article><span>7</span><h3>Review and Deliver</h3><p>The finished collection is delivered to you first for review. You then present it to your client and keep everything above the $50 production fee.</p></article>
-</div>
-</section>
+        <h1 id="hero-heading">
+          Offer Something No Other Photographer Can
+        </h1>
 
-<section class="section gold-panel" id="benefits">
-<div class="section-heading">
-<div class="eyebrow dark-eyebrow">First 100 Approved Partners</div>
-<h2>Founding Partner value built to help you sell.</h2>
-</div>
-<div class="benefit-snapshot">
-<span><strong>$25/year</strong> first 100, grandfathered</span>
-<span><strong>$50</strong> flat production fee</span>
-<span><strong>1–20</strong> professional images</span>
-<span><strong>1 area</strong> per Certified Partner</span>
-<span><strong>90 days</strong> risk-reversal period</span>
-</div>
-<div class="benefits-layout">
-<ul class="check-list">
-<li>Protected local territory</li>
-<li>Custom branded partner subpage</li>
-<li>Dedicated client submission form</li>
-<li>Personalized partner-page QR code</li>
-<li>Certified Partner digital badge</li>
-<li>Founding Partner certificate and number</li>
-<li>One complimentary collection each active year</li>
-<li>Suggested pricing guide and client sales script</li>
-</ul>
-<ul class="check-list">
-<li>Website, email, and social launch copy</li>
-<li>Public-video photography credit</li>
-<li>Potential website, YouTube, and social promotion</li>
-<li>No mandatory monthly production purchases</li>
-<li>No commissions or revenue sharing</li>
-<li>Complimentary branded business cards after first paid collection</li>
-<li>Optional custom photography website under $300</li>
-<li>Direct support from the founder</li>
-</ul>
-</div>
-</section>
+        <p class="hero-subhead">
+          A personalized, custom-written song professionally paired with your
+          client’s favorite photos to tell their story in a cinematic video
+          they will watch, share, and cherish for years to come.
+        </p>
 
-<section class="section local-growth-section" id="local-growth">
-<div class="section-heading centered">
-<div class="eyebrow">Local Growth Advantage</div>
-<h2>Your homepage attracts photographers. Your partner page helps attract local clients.</h2>
-<p class="section-lead">SignatureStoryCollection.com is built to recruit and support Certified Partners. Each approved partner also receives a dedicated local page designed around that photographer’s real business, service area, portfolio, and client experience.</p>
-</div>
-<div class="local-growth-grid">
-<article><h3>Photographer-Focused Main Website</h3><p>The main website explains the Partner Program, protected territories, production pricing, rewards, support, and certification benefits.</p></article>
-<article><h3>Location-Focused Partner Page</h3><p>Your dedicated page may use your actual city, service area, business name, photography specialties, portfolio images, contact details, and client story form.</p></article>
-<article><h3>A Real Local Business Asset</h3><p>The page gives you another branded place to send clients and another legitimate page that search engines can index. Search visibility is never guaranteed and depends on content quality, competition, authority, and ongoing optimization.</p></article>
-</div>
-<div class="seo-note"><strong>Important:</strong> Partner pages are not mass-produced doorway pages. Each page should contain substantial, accurate, photographer-specific content and represent a real service area the partner actively serves.</div>
-</section>
+        <p class="hero-value">
+          Turn every photo session into an opportunity to earn an additional
+          $50–$150 or more with very little extra time or effort.
+        </p>
 
-<section class="section pricing-section" id="pricing">
-<div class="section-heading centered">
-<div class="eyebrow">Founding Partner Pricing</div>
-<h2>Low commitment. Real competitive advantage.</h2>
-</div>
-<div class="founding-notice">
-<h3>Founding Partner Opportunity</h3>
-<p>Only 100 photographers will receive Founding Partner status.</p>
-<p>Approved Founding Partners are grandfathered at just $25 per year as long as they renew on time and remain in good standing.</p>
-<p>Once all 100 Founding Partner positions are filled, new partner pricing will increase.</p>
-</div>
-<div class="pricing-grid">
-<article class="price-card featured">
-<div class="price-badge">First 100 Approved Partners</div>
-<h3>Founding Certification</h3>
-<div class="price"><sup>$</sup>25<span>/ first year</span></div>
-<p>The first 100 approved partners are grandfathered at $25 per year as long as certification is renewed before expiration. Future enrollment pricing increases as the network grows.</p>
-<a class="button button-primary" href="#territory-form">Check Availability</a>
-</article>
-<article class="price-card">
-<h3>Production Rate</h3>
-<div class="price"><sup>$</sup>50<span>/ completed collection</span></div>
-<p>You set your own retail price and keep everything above the Certified Partner production rate.</p>
-<div class="suggested">Suggested retail: <strong>Set any price you choose</strong></div>
-</article>
-</div>
-<div class="payment-note"><strong>Payment terms:</strong> The first five paid collections are billed individually and due within 72 hours after delivery. After five completed and successfully paid collections, partners in good standing may request Net 30 billing.</div>
-<div class="future-pricing-note">
-<h3>Founding Partner Pricing Is Permanent for the First 100</h3>
-<p>Partners #1–100 keep the $25 annual certification rate as long as they renew on time and remain in good standing. If certification expires or is deactivated, reentry is subject to the current published rate.</p>
-<p>After the first 100 approved partners, annual certification increases in future enrollment phases beginning at $50, followed by later $75 and $100 tiers as the network expands.</p>
-</div>
-</section>
+        <p class="hero-tagline">
+          You capture the moments. We handle the rest.
+        </p>
 
-<section class="section transparency-section" id="production-details">
-<div class="section-heading centered">
-<div class="eyebrow">Clear Production Standards</div>
-<h2>Transparent from the first client conversation.</h2>
-</div>
-<div class="transparency-grid">
-<article><h3>AI-Assisted Creative Production</h3><p>Each collection is created using premium licensed creative software, including AI-assisted lyric writing and music generation, followed by human editing, quality control, captioning, video assembly, artwork, and final review.</p></article>
-<article><h3>Your Photography Stays Your Photography</h3><p>The photographer supplies between 1 and 20 professionally edited images. We do not add filters, recolor, retouch, or change the photographer’s editing style. Images may be lightly cropped or repositioned only when needed to fit the 16:9 video format, while preserving the composition whenever possible.</p></article>
-<article><h3>YouTube Delivery</h3><p>Every finished collection is delivered through a working YouTube link on the official Signature Story Collection channel. Public publication is the standard selection. Clients who prefer privacy must choose the unlisted option on the story form before production begins.</p></article>
-<article><h3>Client Payments Stay With You</h3><p>The photographer sets the retail price, deposit requirement, payment schedule, and customer-facing refund policy. Signature Story Collection does not collect money directly from the photographer’s client.</p></article>
-<article><h3>Standard Revision Scope</h3><p>One reasonable revision round is included for corrections or limited adjustments such as a name, date, lyric detail, caption, or image swap. A complete creative restart or entirely new song is outside the standard revision scope.</p></article>
-<article><h3>Resolution Protection</h3><p>If a legitimate production issue cannot be resolved within the agreed scope, Signature Story Collection will work directly with the Certified Partner on an appropriate resolution, which may include revisions, a production credit, or a refund.</p></article>
-<article><h3>Clean Presentation</h3><p>The standard film uses simple fade transitions, intentional image timing, and readable lyric captions. No unnecessary animations or distracting visual effects are added.</p></article>
-<article><h3>Photographer Branding Included</h3><p>If submitted images already contain the photographer’s logo, watermark, or signature, it remains visible in the finished video. Public collections may also include a professional photography credit end card and website mention at no additional cost.</p></article>
-</div>
-<div class="rights-note"><p><strong>Creative rights:</strong> Finished collections are delivered for the client’s personal use. Signature Story Collection retains its branding, templates, workflows, and production methods. No promise of exclusive copyright ownership is made unless separately confirmed in writing.</p></div>
-</section>
+        <div class="hero-actions">
+          <a
+            class="button button-secondary"
+            href="#quick-overview"
+          >
+            See the 60-Second Overview
+          </a>
+        </div>
+      </div>
+    </section>
 
-<section class="section youtube-section">
-<div>
-<div class="eyebrow">Ongoing Partner Promotion</div>
-<h2>Your public collections can advertise your photography business at no extra cost.</h2>
-<p>Your professional photos, your customer’s story, and our custom-created song come together as a complete public-facing piece of content. Public collections may identify your photography business, website, service area, and Certified Partner status on the official Signature Story Collection YouTube channel.</p>
-<p>Public YouTube publication is the standard delivery choice and is disclosed on the client form. Clients who do not want public publication must select the unlisted option before production begins.</p>
-<p>If your submitted images already include your logo, watermark, or signature, it stays visible in the video. We may also include a branded end card crediting your photography business, website, and service area.</p>
-</div>
-<div class="credit-card">
-<span>Photography provided by</span>
-<strong>Your Photography Business</strong>
-<small>Certified Signature Story Collection Partner<br/>Your City, State</small>
-</div>
-</section>
+    <section
+      class="section quick-overview"
+      id="quick-overview"
+      aria-labelledby="overview-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          The Short Version
+        </div>
 
-<section class="section partner-success-section" id="partner-success">
-<div class="section-heading centered">
-<div class="eyebrow">Partner Success System</div>
-<h2>You are not left alone after certification.</h2>
-<p class="section-lead">The goal is not simply to sign photographers. The goal is to help Certified Partners successfully add a new revenue stream.</p>
-</div>
-<div class="support-grid">
-<article><h3>90-Day Onboarding Period</h3><p>Your first three months include no sales requirement. Use the time to learn the offer, create your sample, add the service to your workflow, and begin introducing it to clients.</p></article>
-<article><h3>Monthly Partner Success Sessions</h3><p>Partners may join live monthly sessions covering sales ideas, customer positioning, seasonal promotions, marketing examples, new features, and open questions.</p></article>
-<article><h3>Ongoing Marketing Support</h3><p>Receive promotional copy, social-media ideas, suggested pricing, client scripts, launch materials, and practical guidance designed to make the collection easier to sell.</p></article>
-</div>
-<div class="activity-policy">
-<h3>Protected Territory Activity Policy</h3>
-<p>Protected territories are intended for photographers who actively offer Signature Story Collection™ to their clients.</p>
-<p>After the initial 90-day onboarding period, partners should complete at least one paid collection per month. If a territory becomes inactive, we will first reach out personally, provide support, and discuss what may be preventing progress.</p>
-<ol>
-<li><strong>First check-in:</strong> Friendly outreach and additional support.</li>
-<li><strong>Second check-in:</strong> Partner Success Call and a practical action plan.</li>
-<li><strong>Final review:</strong> If the territory remains inactive after continued support, certification may be suspended or deactivated and the protected area may be reopened.</li>
-</ol>
-<p>Except under the 90-Day Partner Success Guarantee described below, annual certification fees are non-refundable.</p>
-</div>
-</section>
+        <h2 id="overview-heading">
+          One Protected Territory. One Simple Process. One New Revenue Stream.
+        </h2>
+      </div>
 
-<section class="section rewards-section" id="rewards">
-<div class="section-heading centered">
-<div class="eyebrow">Signature Rewards™</div>
-<h2>Sell more in a month. Earn more production credits.</h2>
-<p class="section-lead">Monthly activity resets on the first day of each calendar month. Rewards can be earned again every month.</p>
-</div>
-<div class="rewards-grid">
-<article class="reward-card"><span class="reward-level">5 Completed Collections</span><h3>Earn a $25 Production Credit</h3><strong>$25 value</strong><p>Equivalent to half of one standard production fee. Apply it toward a future Signature Story Collection.</p></article>
-<article class="reward-card featured-reward"><span class="reward-level">10 Completed Collections</span><h3>Earn a $75 Production Credit</h3><strong>$75 value</strong><p>Equivalent to one and a half standard production fees. Apply it toward future projects while continuing to set your own retail price.</p></article>
-<article class="reward-card"><span class="reward-level">20 Completed Collections</span><h3>Earn a $175 Production Credit</h3><strong>$175 value</strong><p>Equivalent to three and a half standard production fees. Designed to reward high monthly activity without limiting what you charge clients.</p></article>
-</div>
-<div class="rewards-terms">
-<p><strong>Monthly reset:</strong> Collection totals do not roll over. Partners must reach each reward level within the same calendar month, and the rewards can be earned again every month.</p>
-<p><strong>Credit terms:</strong> Production Credits have no cash value, are non-transferable, and may be applied only to future standard production fees while the partnership is active and in good standing.</p>
-<p><strong>Application:</strong> Earned credits are applied to the next eligible invoice unless the partner asks to save them for a later project.</p>
-</div>
-</section>
+      <div class="quick-grid">
+        <article>
+          <strong>1</strong>
+          <span>
+            At the end of the photo session, offer Signature Story Collection as a premium add-on.
+          </span>
+        </article>
 
-<section class="section faq-section" id="faq">
-<div class="section-heading centered">
-<div class="eyebrow">Frequently Asked Questions</div>
-<h2>Clear answers before you apply.</h2>
-</div>
-<div class="faq-list">
-<details><summary>Does submitting the form reserve my territory?</summary><p>No. It requests an availability review. A territory is secured only after approval, acceptance, and payment within the stated 24-hour window.</p></details>
-<details><summary>How long is the territory protected?</summary><p>The initial term is one year beginning on the date payment is received. Renewal terms and pricing are reviewed before expiration.</p></details>
-<details><summary>Can I choose what I charge my client?</summary><p>Yes. You control your retail price and retain everything above the $50 Certified Partner production rate.</p></details>
-<details><summary>How many photographs are included?</summary><p>Each standard collection includes up to 20 professional photographs. Nonstandard requests must be approved before production.</p></details>
-<details><summary>Is every video public?</summary><p>Public YouTube publication is the standard option and is clearly disclosed on the client form. Clients can select unlisted delivery before production.</p></details>
-<details><summary>Do I receive a complimentary sample?</summary><p>Yes. Every active Certified Partner receives one complimentary standard collection during each active partnership year.</p></details>
-<details><summary>Are there monthly minimums?</summary><p>There are no mandatory monthly production purchases. Production charges apply only when you submit paid client projects. After the 90-day onboarding period, Certified Partners are expected to remain active to keep an exclusive protected territory.</p></details>
-<details><summary>How do monthly Signature Rewards work?</summary><p>Completed paid collections are counted during each calendar month. Five earns a $25 Production Credit, ten earns a $75 Production Credit, and twenty earns a $175 Production Credit. Totals reset on the first day of the next month, and the rewards can be earned again every month.</p></details>
-<details><summary>Is the $25 annual rate permanent?</summary><p>It is grandfathered for the first 100 approved partners as long as they renew on time and remain in good standing. If certification expires or is deactivated, reentry is subject to the current published rate.</p></details>
-<details><summary>What happens if I do not sell anything?</summary><p>There is no sales requirement during the first 90 days. After onboarding, partners should complete at least one collection per month to keep an exclusive protected territory. We contact and support inactive partners before considering suspension or deactivation.</p></details>
-<details><summary>How does the 90-Day Partner Success Guarantee work?</summary><p>At the end of your first 90 days, you may speak directly with Founder Dan Rock. If you believe the program did not provide meaningful value and still want to leave after that conversation, your annual certification fee is refunded in full and your partner status and territory are released.</p></details>
-<details><summary>Is AI used to create the song?</summary><p>Yes. Premium licensed AI-assisted tools are used in the lyric and music-production process. Human work is still involved in direction, editing, quality control, captioning, image timing, artwork, and final assembly.</p></details>
-<details><summary>What does the standard video actually include?</summary><p>The standard film uses between 1 and 20 photographer-supplied images, clean fade transitions, intentional pacing, and lyric captions synchronized to the song. Advanced animation and special effects are not included unless separately approved.</p></details>
-<details><summary>Who collects payment from the client?</summary><p>The photographer does. Each Certified Partner controls the retail price, deposit structure, payment schedule, and customer-facing guarantee. Signature Story Collection bills the photographer only.</p></details>
-<details><summary>When does the photographer pay the production fee?</summary><p>For the first five paid collections, the $50 production fee is due within 72 hours after delivery. After five completed and successfully paid projects, the partner may request Net 30 billing.</p></details>
-<details><summary>Are partner pages guaranteed to rank in Google?</summary><p>No. A local partner page creates a legitimate indexable business asset, but rankings depend on competition, content quality, website authority, technical SEO, reviews, links, and ongoing optimization. No search ranking is guaranteed.</p></details>
-<details><summary>What markup is recommended?</summary><p>A common starting markup is $50–$150 above the $50 production fee, depending on clientele, package positioning, and local market. The photographer may charge more and keeps the difference.</p></details>
-<details><summary>Can I market this to past clients?</summary><p>Yes. Past clients may be an excellent starting point, especially when you still have access to their professional images. Certified Partners receive launch-email and promotional templates. The photographer keeps control of the client list and sends the message from their own business.</p></details>
-<details><summary>Does my business receive YouTube exposure?</summary><p>Public collections may include photography credit, business name, service area, website, and Certified Partner status at no additional charge. Exposure and audience results are not guaranteed.</p></details>
-<details><summary>Will you alter my photographs?</summary><p>No filters, recoloring, retouching, or style changes are applied. Images may be lightly cropped or repositioned only when necessary to fit the 16:9 video format. The standard film uses clean fades, careful timing, and lyric captions.</p></details>
-<details><summary>Will my logo, watermark, or signature stay visible?</summary><p>Yes. If it is already included on the submitted image, it remains part of the video. Public collections may also include a separate photography-credit end card with your business name, website, service area, and Certified Partner designation.</p></details>
-</div>
-</section>
+        <article>
+          <strong>2</strong>
+          <span>
+            If the client says yes, send them your dedicated page, such as SignatureStoryCollection.com/YourName.
+          </span>
+        </article>
 
-<section class="section launch-kit-section" id="launch-kit">
-<div class="section-heading centered">
-<div class="eyebrow">Done-for-You Client Growth Resources</div>
-<h2>You do not have to figure out how to launch this alone.</h2>
-<p class="section-lead">Every Certified Partner receives practical, copy-and-paste materials for introducing Signature Story Collection™ to existing and future clients.</p>
-</div>
-<div class="launch-grid">
-<article><h3>Launch Email</h3><p>A ready-to-send announcement for your past-client list using Gmail, Mailchimp, Flodesk, Kit, or another email platform.</p></article>
-<article><h3>Social Media Kit</h3><p>Instagram captions, Facebook posts, Stories, announcement graphics, and QR-code promotional ideas.</p></article>
-<article><h3>Website Copy</h3><p>Ready-to-use website language explaining the offer, package value, process, and client next step.</p></article>
-<article><h3>Sales Script</h3><p>A simple way to introduce the collection during booking, gallery delivery, consultations, and follow-up conversations.</p></article>
-<article><h3>Seasonal Campaigns</h3><p>Promotional angles for weddings, anniversaries, Valentine’s Day, Mother’s Day, Father’s Day, graduations, holidays, memorials, and more.</p></article>
-<article><h3>Monthly Marketing Pack</h3><p>Fresh promotional ideas and reusable materials designed to help active partners keep the offer visible throughout the year.</p></article>
-</div>
-<div class="launch-note"><strong>Fastest first-sale strategy:</strong> Send the launch email to past clients whose professional photos you still have access to or can readily re-deliver. The photographer keeps control of the client list and sends the message from their own business.</div>
-</section>
+        <article>
+          <strong>3</strong>
+          <span>
+            The client completes a simple form with names, memories, important details, music preferences, and anything to include or avoid.
+          </span>
+        </article>
 
-<section class="section guarantee-section" id="guarantee">
-<div class="guarantee-card">
-<div class="eyebrow">100% Partner Success Guarantee™</div>
-<h2>Try the program for 90 days with the risk removed.</h2>
-<p>Every new Certified Partner receives a full 90-day onboarding period with access to partner resources, marketing support, a dedicated partner page, and direct communication with Founder Dan Rock.</p>
-<p>If, at the end of the first 90 days, you genuinely believe the program has not delivered meaningful value to your business, schedule a personal conversation with Dan. We will review your experience, collect your feedback, and discuss whether anything can be improved.</p>
-<p>If you still decide the program is not the right fit, your annual certification fee will be refunded in full. Your Certified Partner status will end, your custom partner page will be removed, and your protected territory will become available to another photographer.</p>
-<strong>No complicated forms. A real conversation and a real 100% refund.</strong>
-</div>
-</section>
+        <article>
+          <strong>4</strong>
+          <span>
+            At the end of your editing process, have the customer select between 1 and 20 finished photographs for their Signature Story Collection.
+          </span>
+        </article>
 
-<section class="section form-section" id="territory-form">
-<div class="form-copy">
-<div class="eyebrow">Check Territory Availability</div>
-<h2>Is your area still available?</h2>
-<p>Complete the short form. We will review your requested service area and contact you shortly. Outreach normally begins with a brief text to confirm a convenient time for a personal phone call with Founder Dan Rock. The first 100 approved partners qualify for grandfathered $25 annual certification and the 90-Day Partner Success Guarantee.</p>
-<div class="form-points">
-<span>No payment today</span>
-<span>No territory reserved until approved and paid</span>
-<span>Response typically within one business day</span>
-</div>
-</div>
-<form action="https://formspree.io/f/xwpqlypv" class="territory-form" method="POST">
-<input name="_subject" type="hidden" value="New Signature Story Collection Territory Request"/>
-<input name="_next" type="hidden" value="https://signaturestorycollection.com/success.html"/>
-<label>Full Name *<input autocomplete="name" name="full_name" required type="text"/></label>
-<label>Photography Business Name *<input autocomplete="organization" name="business_name" required type="text"/></label>
-<div class="form-row">
-<label>Email Address *<input autocomplete="email" name="email" required type="email"/></label>
-<label>Phone Number *<input autocomplete="tel" name="phone" required type="tel"/></label>
-</div>
-<label>Website or Portfolio Link<input name="website" placeholder="https://" type="url"/></label>
-<div class="form-row three">
-<label>City *<input autocomplete="address-level2" name="city" required type="text"/></label>
-<label>State *<input autocomplete="address-level1" name="state" required type="text"/></label>
-<label>ZIP Code *<input autocomplete="postal-code" inputmode="numeric" name="zip_code" required type="text"/></label>
-</div>
-<label>Primary Service Area *<input name="primary_service_area" placeholder="Example: Santa Clarita, Valencia and Newhall" required type="text"/></label>
-<label>Photography Specialties<textarea name="specialties" placeholder="Weddings, families, maternity, seniors, memorials, etc." rows="3"></textarea></label>
-<label>How did you hear about us?<input name="referral_source" type="text"/></label>
-<label class="consent">
-<input name="contact_permission" required type="checkbox" value="yes"/>
-<span>I agree to receive a text, phone call, or email regarding territory availability and the Signature Story Collection™ Partner Program. I acknowledge the <a href="./privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a> and <a href="./terms-of-service.html" target="_blank" rel="noopener">Terms of Service</a>. *</span>
-</label>
-<button class="button button-primary submit-button" type="submit">Check My Territory</button>
-<p class="form-disclaimer">Submitting this form does not reserve a territory or create a partnership. Your information is used to review territory availability and contact you about the Signature Story Collection™ Partner Program.</p>
-</form>
-</section>
+        <article>
+          <strong>5</strong>
+          <span>
+            You submit the client-approved photographs through the designated upload or delivery method.
+          </span>
+        </article>
 
-<section class="final-cta">
-<img alt="" aria-hidden="true" src="./signature-story-logo.jpg"/>
-<div>
-<div class="eyebrow">Become One of the First 100</div>
-<h2>Give clients a story they can see, hear, feel, and preserve.</h2>
-<a class="button button-primary" href="#territory-form">Check Territory Availability</a>
-</div>
-</section>
-</main>
+        <article>
+          <strong>6</strong>
+          <span>
+            We create the personalized song, cinematic video, lyric captions, cover artwork, and complete digital package.
+          </span>
+        </article>
 
-<footer>
-<div>
-<strong>Signature Story Collection™</strong>
-<span>Every Beautiful Photograph Deserves a Beautiful Soundtrack.</span>
-</div>
-<div class="footer-links">
-<a href="./index.html">Home</a>
-<a href="#territory-form">Partner Inquiry</a>
-<a href="./privacy-policy.html">Privacy Policy</a>
-<a href="./terms-of-service.html">Terms of Service</a>
-<a href="mailto:partners@signaturestorycollection.com">Contact</a>
-</div>
-<p>© <span id="year"></span> Signature Story Collection™. All rights reserved.</p>
-</footer>
+        <article>
+          <strong>7</strong>
+          <span>
+            You review the finished collection, deliver it to your client, and keep everything above the $50 production fee.
+          </span>
+        </article>
+      </div>
 
-<script>
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
+      <div class="partner-cta-box">
+        <h3>
+          What Becoming a Certified Partner Means
+        </h3>
 
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(isOpen));
-  });
+        <p>
+          You receive a protected local territory, your own client submission
+          page, Partner marketing materials, and access to the $50 Certified
+          Partner production rate. You offer the service, your client submits
+          their story and selected photographs, and we handle the complete
+          creative production.
+        </p>
 
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
+        <a
+          class="button button-primary"
+          href="#territory-form"
+        >
+          Check My Territory
+        </a>
+      </div>
+
+      <div class="quick-profit" aria-label="Example Partner profit">
+        <div>
+          <span>Your Retail Price</span>
+          <strong>$150</strong>
+        </div>
+
+        <div>
+          <span>Production Fee</span>
+          <strong>− $50</strong>
+        </div>
+
+        <div>
+          <span>Your Gross Profit</span>
+          <strong>$100</strong>
+        </div>
+      </div>
+
+      <p class="center-note">
+        Founding certification is $25 per year for the first 100 approved
+        Partners and remains grandfathered with on-time renewal and good
+        standing. The standard Certified Partner production rate is $50 and
+        includes between 1 and 20 finished professional photographs.
+      </p>
+    </section>
+
+    <section
+      class="section partner-page-section"
+      id="partner-pages"
+      aria-labelledby="partner-page-heading"
+    >
+      <div class="partner-page-preview">
+        <div class="sample-label">
+          Sample Certified Partner Page
+        </div>
+
+        <div class="mock-browser">
+          <div class="browser-bar">
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+
+            <span>
+              SignatureStoryCollection.com/YourName
+            </span>
+          </div>
+
+          <div class="browser-content">
+            <div class="mock-logo">
+              Example Partner Logo
+            </div>
+
+            <h3>
+              Coastal Light Photography
+            </h3>
+
+            <p>
+              Certified Signature Story Collection™ Partner
+              <br/>
+              Serving Oxnard, Port Hueneme, and Ventura
+            </p>
+
+            <button type="button">
+              Begin Your Signature Story
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="partner-copy">
+        <div class="eyebrow">
+          This Is What You Receive
+        </div>
+
+        <h2 id="partner-page-heading">
+          Every Certified Partner Receives a Professional Local Landing Page
+        </h2>
+
+        <p>
+          Your dedicated page can feature your logo, portfolio images,
+          photography business information, service area, specialties,
+          Certified Partner status, and a direct client story-submission form.
+        </p>
+
+        <p>
+          When a client says yes, you send one link. The client completes the
+          story form, selects the photographs after your editing process is
+          complete, and you submit the final approved images.
+        </p>
+
+        <p>
+          We then create the custom-written song, cinematic photo story video,
+          lyric captions, artwork, and complete delivery package.
+        </p>
+
+        <div class="photo-reassurance">
+          <strong>
+            Your Photos Stay Your Photos
+          </strong>
+
+          <p>
+            We preserve your finished editing style. We do not intentionally
+            recolor, filter, retouch, or restyle your professional images.
+            Minor cropping, scaling, or repositioning may be used only when
+            necessary to fit the 16:9 video format.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section revenue-section"
+      id="earnings"
+      aria-labelledby="earnings-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Simple Additional Revenue
+        </div>
+
+        <h2 id="earnings-heading">
+          You Decide the Retail Price. We Charge a Flat $50 Production Fee.
+        </h2>
+      </div>
+
+      <div class="revenue-grid">
+        <article>
+          <span>Example Retail Price</span>
+          <strong>$100</strong>
+
+          <p>
+            Your gross profit:
+            <b>$50</b>
+          </p>
+        </article>
+
+        <article>
+          <span>Example Retail Price</span>
+          <strong>$150</strong>
+
+          <p>
+            Your gross profit:
+            <b>$100</b>
+          </p>
+        </article>
+
+        <article>
+          <span>Example Retail Price</span>
+          <strong>$200</strong>
+
+          <p>
+            Your gross profit:
+            <b>$150</b>
+          </p>
+        </article>
+      </div>
+
+      <p class="center-note">
+        Bundle Signature Story Collection into a premium wedding, family,
+        maternity, newborn, senior, anniversary, memorial, pet, or portrait
+        package, or offer it as a standalone upgrade.
+      </p>
+    </section>
+
+    <section
+      class="section intro-section"
+      aria-labelledby="revenue-stream-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          A New Revenue Stream
+        </div>
+
+        <h2 id="revenue-stream-heading">
+          Give Clients Something They Cannot Get From Another Photographer
+        </h2>
+      </div>
+
+      <div class="two-column">
+        <p>
+          Your clients already trust you to preserve the most meaningful
+          moments of their lives. Signature Story Collection helps you extend
+          that experience through a personalized original song and cinematic
+          photo story video created from their story and your professional
+          images.
+        </p>
+
+        <p>
+          You remain the trusted face of the experience. We work behind the
+          scenes as your creative production partner, handling the
+          storytelling, songwriting, music production, captions, video
+          assembly, artwork, and final digital assets.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section dark-section"
+      id="finished-collection"
+      aria-labelledby="collection-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          The Finished Collection
+        </div>
+
+        <h2 id="collection-heading">
+          Premium, Personal, and Easy to Deliver
+        </h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+
+          <h3>
+            Personalized Musical Story
+          </h3>
+
+          <p>
+            A custom-written song developed from the client’s names, memories,
+            milestones, preferred emotion, relationships, and music direction.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+
+          <h3>
+            Cinematic Photo Story Video
+          </h3>
+
+          <p>
+            A polished video using between 1 and 20 finished professional
+            photographs, intentional timing, clean fade transitions, readable
+            lyrics, and Partner photography credit.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+
+          <h3>
+            Complete Digital Package
+          </h3>
+
+          <p>
+            A shareable YouTube link, available HD video, MP3 audio, cover
+            artwork, lyric artwork, and a finished package ready for client
+            delivery.
+          </p>
+        </article>
+      </div>
+
+      <p class="fine-print">
+        Advanced animation, extensive image restoration, additional songs,
+        special effects, or nonstandard production requests may require
+        separate approval and pricing.
+      </p>
+    </section>
+
+    <section
+      class="section"
+      id="how-it-works"
+      aria-labelledby="workflow-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Simple Workflow
+        </div>
+
+        <h2 id="workflow-heading">
+          You Sell It. We Build It. You Deliver It.
+        </h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>1</span>
+
+          <h3>
+            Offer It After the Session
+          </h3>
+
+          <p>
+            Introduce Signature Story Collection as a premium add-on at the end
+            of the photography session while the experience is still fresh and
+            the client is still with you.
+          </p>
+        </article>
+
+        <article>
+          <span>2</span>
+
+          <h3>
+            Share Your Partner Link
+          </h3>
+
+          <p>
+            When the client says yes, send your dedicated page by text, email,
+            QR code, or gallery message.
+          </p>
+        </article>
+
+        <article>
+          <span>3</span>
+
+          <h3>
+            The Client Tells Their Story
+          </h3>
+
+          <p>
+            The client completes a simple form with names, memories, important
+            details, music direction, publication preference, and anything to
+            include or avoid.
+          </p>
+        </article>
+
+        <article>
+          <span>4</span>
+
+          <h3>
+            The Client Selects Their Photos
+          </h3>
+
+          <p>
+            After you complete your normal editing process, have the client
+            select between 1 and 20 finished professional photographs.
+          </p>
+        </article>
+
+        <article>
+          <span>5</span>
+
+          <h3>
+            Submit the Final Images
+          </h3>
+
+          <p>
+            Send the client-approved photographs through the designated upload
+            or delivery method.
+          </p>
+        </article>
+
+        <article>
+          <span>6</span>
+
+          <h3>
+            We Create the Experience
+          </h3>
+
+          <p>
+            We develop the personalized song, produce the audio, assemble the
+            cinematic video, add captions, create the artwork, and prepare the
+            complete digital package.
+          </p>
+        </article>
+
+        <article>
+          <span>7</span>
+
+          <h3>
+            Review and Deliver
+          </h3>
+
+          <p>
+            The completed collection is delivered to you first for review. You
+            then present it to your client and keep everything above the
+            applicable production fee.
+          </p>
+        </article>
+      </div>
+    </section>
+		    <section
+      class="section gold-panel"
+      id="partner-benefits"
+      aria-labelledby="benefits-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow dark-eyebrow">
+          First 100 Approved Partners
+        </div>
+
+        <h2 id="benefits-heading">
+          Founding Partner Value Built to Help You Sell
+        </h2>
+      </div>
+
+      <div class="benefit-snapshot">
+        <span>
+          <strong>$25/year</strong>
+          First 100 approved Partners
+        </span>
+
+        <span>
+          <strong>$50</strong>
+          Standard production fee
+        </span>
+
+        <span>
+          <strong>1–20</strong>
+          Professional photographs
+        </span>
+
+        <span>
+          <strong>1 Area</strong>
+          Per Certified Partner
+        </span>
+
+        <span>
+          <strong>90 Days</strong>
+          Partner Success Guarantee
+        </span>
+      </div>
+
+      <div class="benefits-layout">
+        <ul class="check-list">
+          <li>Protected local territory</li>
+          <li>Custom-branded Partner landing page</li>
+          <li>Dedicated client story-submission process</li>
+          <li>Personalized Partner-page QR code</li>
+          <li>Certified Partner digital badge</li>
+          <li>Founding Partner certificate and number</li>
+          <li>One complimentary standard collection each active year</li>
+          <li>Suggested pricing guide and client sales script</li>
+        </ul>
+
+        <ul class="check-list">
+          <li>Website, email, and social launch copy</li>
+          <li>Public-video photography credit</li>
+          <li>Potential website, YouTube, and social promotion</li>
+          <li>No mandatory monthly production purchases</li>
+          <li>No commissions or revenue sharing</li>
+          <li>Complimentary branded business cards after the first paid collection</li>
+          <li>Optional custom photography website services</li>
+          <li>Direct support from Founder Dan Rock</li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      class="section local-growth-section"
+      id="local-growth"
+      aria-labelledby="local-growth-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Local Growth Advantage
+        </div>
+
+        <h2 id="local-growth-heading">
+          Your Partner Page Becomes a Real Local Business Asset
+        </h2>
+
+        <p class="section-lead">
+          SignatureStoryCollection.com is built to recruit and support
+          Certified Partners. Each approved Partner also receives a dedicated
+          local page built around the photographer’s real business, service
+          area, portfolio, specialties, and client experience.
+        </p>
+      </div>
+
+      <div class="local-growth-grid">
+        <article>
+          <h3>
+            Photographer-Focused Main Website
+          </h3>
+
+          <p>
+            The main website explains the Certified Partner Program, protected
+            territories, production pricing, rewards, support, marketing
+            resources, and certification benefits.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Location-Focused Partner Page
+          </h3>
+
+          <p>
+            Your dedicated page may include your real city, approved service
+            area, photography business name, specialties, portfolio images,
+            contact details, branding, and client story-submission process.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            A Branded Place to Send Clients
+          </h3>
+
+          <p>
+            Your Partner page gives you a professional destination for text
+            messages, emails, QR codes, website links, gallery messages, and
+            social-media promotions.
+          </p>
+        </article>
+      </div>
+
+      <div class="seo-note">
+        <strong>Important:</strong>
+        Partner pages are built to represent real photography businesses and
+        legitimate service areas. Search visibility depends on competition,
+        content quality, authority, links, reviews, technical performance, and
+        ongoing optimization. No search ranking is guaranteed.
+      </div>
+    </section>
+
+    <section
+      class="section pricing-section"
+      id="pricing"
+      aria-labelledby="pricing-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Founding Partner Pricing
+        </div>
+
+        <h2 id="pricing-heading">
+          Low Commitment. Real Competitive Advantage.
+        </h2>
+      </div>
+
+      <div class="founding-notice">
+        <h3>
+          Only 100 Photographers Receive Founding Partner Status
+        </h3>
+
+        <p>
+          Approved Founding Partners receive the $25 annual certification rate
+          and keep that rate as long as they renew on time and remain in good
+          standing.
+        </p>
+
+        <p>
+          Once all 100 Founding Partner positions are filled, new annual
+          certification pricing will increase.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card featured">
+          <div class="price-badge">
+            First 100 Approved Partners
+          </div>
+
+          <h3>
+            Founding Certification
+          </h3>
+
+          <div class="price">
+            <sup>$</sup>25
+            <span>per active partnership year</span>
+          </div>
+
+          <p>
+            Founding Partners remain grandfathered at $25 per year while
+            certification is renewed on time and the Partner remains active,
+            compliant, paid, and in good standing.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="#territory-form"
+          >
+            Check Availability
+          </a>
+        </article>
+
+        <article class="price-card">
+          <h3>
+            Standard Production Rate
+          </h3>
+
+          <div class="price">
+            <sup>$</sup>50
+            <span>per completed standard collection</span>
+          </div>
+
+          <p>
+            You set your own retail price and keep everything collected from
+            the client above the applicable Certified Partner production rate.
+          </p>
+
+          <div class="suggested">
+            Suggested starting markup:
+            <strong>$50–$150 or more</strong>
+          </div>
+        </article>
+      </div>
+
+      <div class="payment-note">
+        <strong>Payment terms:</strong>
+        The first five paid collections are billed individually and are due
+        within 72 hours after delivery. After five completed and successfully
+        paid projects, Partners in good standing may request Net 30 billing.
+      </div>
+
+      <div class="future-pricing-note">
+        <h3>
+          Founding Partner Pricing Continues With Good Standing
+        </h3>
+
+        <p>
+          Partners numbered 1–100 keep the $25 annual certification rate while
+          they renew on time and remain in good standing.
+        </p>
+
+        <p>
+          If certification expires, is canceled, or is deactivated, reentry is
+          subject to current pricing, Partner approval, and territory
+          availability.
+        </p>
+
+        <p>
+          Future enrollment phases may begin at $50 per year and increase as
+          the Partner network expands.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section transparency-section"
+      id="production-standards"
+      aria-labelledby="standards-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Clear Production Standards
+        </div>
+
+        <h2 id="standards-heading">
+          Transparent From the First Client Conversation
+        </h2>
+      </div>
+
+      <div class="transparency-grid">
+        <article>
+          <h3>
+            AI-Assisted Creative Production
+          </h3>
+
+          <p>
+            Each collection may use premium licensed AI-assisted tools for
+            lyric development, music generation, editing, captions, artwork,
+            and production support. Human direction, editing, quality control,
+            assembly, and final review remain part of the process.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Your Photography Stays Your Photography
+          </h3>
+
+          <p>
+            We do not intentionally recolor, retouch, filter, or change the
+            photographer’s finished editing style. Minor cropping, scaling, or
+            repositioning may be used only when necessary to fit the 16:9 video
+            format.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            YouTube Delivery
+          </h3>
+
+          <p>
+            Finished collections are delivered through a working YouTube link
+            on the official Signature Story Collection channel. Public
+            publication is the standard option when authorized. Clients may
+            select unlisted delivery before production.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Client Payments Stay With You
+          </h3>
+
+          <p>
+            The photographer sets the retail price, deposit, payment schedule,
+            customer-facing guarantee, and refund policy. Signature Story
+            Collection generally bills the photographer, not the photographer’s
+            client.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Standard Revision Scope
+          </h3>
+
+          <p>
+            One reasonable revision round is included for corrections or
+            limited adjustments such as a name, date, lyric detail, caption,
+            timing change, or reasonable image substitution.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Creative Restarts Are Separate
+          </h3>
+
+          <p>
+            A complete rewrite, new genre, replacement song, major video
+            restructuring, extensive image changes, or work caused by omitted
+            information may require additional pricing or a new project.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Clean Presentation
+          </h3>
+
+          <p>
+            Standard videos use clean fade transitions, intentional image
+            timing, readable lyric captions, and a polished presentation
+            without unnecessary animations or distracting effects.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Photographer Branding Included
+          </h3>
+
+          <p>
+            Existing logos, watermarks, and image signatures remain visible.
+            Qualifying public collections may also include a professional
+            photography credit end card, business website, service area, and
+            Certified Partner designation.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Production Issues Are Reviewed
+          </h3>
+
+          <p>
+            If a legitimate production issue cannot be corrected within the
+            agreed scope, Signature Story Collection will work directly with
+            the Certified Partner on an appropriate resolution.
+          </p>
+        </article>
+      </div>
+
+      <div class="rights-note">
+        <p>
+          <strong>Creative-rights notice:</strong>
+          Photographers and clients retain whatever rights they lawfully hold
+          in their original photographs, logos, stories, and submitted
+          materials. Signature Story Collection retains its branding,
+          templates, workflows, production methods, marketing resources, and
+          proprietary business systems.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section youtube-section"
+      id="partner-promotion"
+      aria-labelledby="promotion-heading"
+    >
+      <div>
+        <div class="eyebrow">
+          Ongoing Partner Promotion
+        </div>
+
+        <h2 id="promotion-heading">
+          Public Collections Can Promote Your Photography Business at No
+          Additional Cost
+        </h2>
+
+        <p>
+          Your professional photographs, your client’s story, and our
+          custom-created song come together as a complete public-facing piece
+          of content.
+        </p>
+
+        <p>
+          Qualifying public collections may identify your photography business,
+          website, service area, and Certified Partner status on the official
+          Signature Story Collection YouTube channel.
+        </p>
+
+        <p>
+          Public publication is used only when authorized through the client
+          process. Clients who prefer greater privacy must choose the unlisted
+          option before production begins.
+        </p>
+
+        <p>
+          Exposure, views, search placement, audience growth, subscribers, and
+          client leads are never guaranteed.
+        </p>
+      </div>
+
+      <div class="credit-card">
+        <span>
+          Photography Provided By
+        </span>
+
+        <strong>
+          Your Photography Business
+        </strong>
+
+        <small>
+          Certified Signature Story Collection™ Partner
+          <br/>
+          Your City, State
+        </small>
+      </div>
+    </section>
+
+    <section
+      class="section partner-success-section"
+      id="partner-support"
+      aria-labelledby="support-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Partner Success System
+        </div>
+
+        <h2 id="support-heading">
+          You Are Not Left Alone After Certification
+        </h2>
+
+        <p class="section-lead">
+          The goal is not simply to enroll photographers. The goal is to help
+          Certified Partners successfully introduce, sell, and deliver a new
+          premium revenue stream.
+        </p>
+      </div>
+
+      <div class="support-grid">
+        <article>
+          <h3>
+            90-Day Onboarding Period
+          </h3>
+
+          <p>
+            Your first three months include no sales requirement. Use the time
+            to learn the offer, create your complimentary sample, add the
+            service to your workflow, and begin introducing it to clients.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Partner Success Sessions
+          </h3>
+
+          <p>
+            Available sessions may cover sales ideas, customer positioning,
+            seasonal promotions, marketing examples, new features, pricing,
+            project workflow, and open Partner questions.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Ongoing Marketing Support
+          </h3>
+
+          <p>
+            Receive promotional copy, social-media ideas, pricing suggestions,
+            client scripts, campaign concepts, launch materials, and practical
+            guidance designed to make the collection easier to sell.
+          </p>
+        </article>
+      </div>
+
+      <div class="activity-policy">
+        <h3>
+          Protected Territory Activity Policy
+        </h3>
+
+        <p>
+          Protected territories are intended for photographers who actively
+          offer Signature Story Collection™ to their clients.
+        </p>
+
+        <p>
+          There are no mandatory monthly production purchases. After the
+          initial 90-day onboarding period, Partners are expected to remain
+          reasonably active and should complete at least one paid collection
+          per month to maintain exclusive territory status.
+        </p>
+
+        <ol>
+          <li>
+            <strong>First check-in:</strong>
+            Friendly outreach, account review, and additional support.
+          </li>
+
+          <li>
+            <strong>Second check-in:</strong>
+            Partner Success conversation and a practical action plan.
+          </li>
+
+          <li>
+            <strong>Final review:</strong>
+            If inactivity continues after support and communication, territory
+            protection may be suspended or ended and the area may be reopened.
+          </li>
+        </ol>
+
+        <p>
+          Seasonality, illness, emergencies, business changes, communication,
+          and good-faith marketing activity may be considered before a
+          territory is reopened.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section rewards-section"
+      id="rewards"
+      aria-labelledby="rewards-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Signature Rewards™
+        </div>
+
+        <h2 id="rewards-heading">
+          Sell More in a Month. Earn More Production Credits.
+        </h2>
+
+        <p class="section-lead">
+          Monthly activity resets on the first day of each calendar month.
+          Eligible rewards can be earned again every month.
+        </p>
+      </div>
+
+      <div class="rewards-grid">
+        <article class="reward-card">
+          <span class="reward-level">
+            5 Completed Paid Collections
+          </span>
+
+          <h3>
+            Earn a $25 Production Credit
+          </h3>
+
+          <strong>
+            $25 Value
+          </strong>
+
+          <p>
+            Equivalent to half of one standard production fee and applied to a
+            future eligible Signature Story Collection project.
+          </p>
+        </article>
+
+        <article class="reward-card featured-reward">
+          <span class="reward-level">
+            10 Completed Paid Collections
+          </span>
+
+          <h3>
+            Earn a $75 Production Credit
+          </h3>
+
+          <strong>
+            $75 Value
+          </strong>
+
+          <p>
+            Equivalent to one and one-half standard production fees and
+            available for future eligible Partner projects.
+          </p>
+        </article>
+
+        <article class="reward-card">
+          <span class="reward-level">
+            20 Completed Paid Collections
+          </span>
+
+          <h3>
+            Earn a $175 Production Credit
+          </h3>
+
+          <strong>
+            $175 Value
+          </strong>
+
+          <p>
+            Equivalent to three and one-half standard production fees and
+            designed to reward high monthly Partner activity.
+          </p>
+        </article>
+      </div>
+
+      <div class="rewards-terms">
+        <p>
+          <strong>Monthly reset:</strong>
+          Completed paid collections must be reached within the same calendar
+          month. Totals do not roll over.
+        </p>
+
+        <p>
+          <strong>Credit terms:</strong>
+          Production Credits have no cash value, are non-transferable, and may
+          be applied only to future eligible standard production fees while the
+          Partner remains active and in good standing.
+        </p>
+
+        <p>
+          <strong>Application:</strong>
+          Earned credits are generally applied to the next eligible invoice
+          unless another arrangement is approved.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section launch-kit-section"
+      id="marketing-kit"
+      aria-labelledby="marketing-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Done-for-You Client Growth Resources
+        </div>
+
+        <h2 id="marketing-heading">
+          You Do Not Have to Figure Out How to Launch This Alone
+        </h2>
+
+        <p class="section-lead">
+          Every active Certified Partner receives practical, copy-and-paste
+          materials for introducing Signature Story Collection™ to existing
+          and future photography clients.
+        </p>
+      </div>
+
+      <div class="launch-grid">
+        <article>
+          <h3>
+            Launch Email
+          </h3>
+
+          <p>
+            A ready-to-send announcement for past clients using Gmail,
+            Mailchimp, Flodesk, Kit, or another email platform.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Social Media Kit
+          </h3>
+
+          <p>
+            Instagram captions, Facebook posts, Stories, announcement copy,
+            promotional graphics, and QR-code campaign ideas.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Website Copy
+          </h3>
+
+          <p>
+            Ready-to-use language explaining the offer, process, collection
+            value, publication choices, and client next step.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Sales Script
+          </h3>
+
+          <p>
+            A simple conversation framework for presenting the collection
+            during sessions, consultations, gallery delivery, and follow-up.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Seasonal Campaigns
+          </h3>
+
+          <p>
+            Campaign ideas for weddings, anniversaries, Valentine’s Day,
+            Mother’s Day, Father’s Day, graduations, holidays, memorials, and
+            other meaningful occasions.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            Ongoing Marketing Ideas
+          </h3>
+
+          <p>
+            Reusable promotional angles and fresh content ideas designed to
+            help active Partners keep the service visible throughout the year.
+          </p>
+        </article>
+      </div>
+
+      <div class="launch-note">
+        <strong>Fastest first-sale strategy:</strong>
+        Contact past clients whose finished professional photographs you still
+        have access to or can readily redeliver. The photographer keeps control
+        of the client list and sends the message from the photography business.
+      </div>
+    </section>
+
+    <section
+      class="section guarantee-section"
+      id="partner-guarantee"
+      aria-labelledby="guarantee-heading"
+    >
+      <div class="guarantee-card">
+        <div class="eyebrow">
+          100% Partner Success Guarantee™
+        </div>
+
+        <h2 id="guarantee-heading">
+          Try the Program for 90 Days With the Certification Risk Removed
+        </h2>
+
+        <p>
+          Every new Certified Partner receives a 90-day onboarding period with
+          access to Partner resources, marketing support, a dedicated Partner
+          page, and direct communication with Founder Dan Rock.
+        </p>
+
+        <p>
+          If, at the end of the first 90 days, you genuinely believe the
+          program did not provide meaningful value to your photography
+          business, schedule a personal conversation with Dan.
+        </p>
+
+        <p>
+          We will review your experience, collect your feedback, answer
+          questions, and discuss whether anything can reasonably be improved.
+        </p>
+
+        <p>
+          If you still decide the program is not the right fit, the annual
+          certification fee will be refunded in full. Your Certified Partner
+          status will end, the dedicated Partner page may be removed, and the
+          protected territory will become available to another photographer.
+        </p>
+
+        <strong>
+          No complicated forms. A real conversation and a real 100%
+          certification-fee refund.
+        </strong>
+      </div>
+    </section>
+		    <section
+      class="section faq-section"
+      id="faq"
+      aria-labelledby="faq-heading"
+    >
+      <div class="section-heading centered">
+        <div class="eyebrow">
+          Frequently Asked Questions
+        </div>
+
+        <h2 id="faq-heading">
+          Clear Answers Before You Apply
+        </h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>
+            Does submitting the form reserve my territory?
+          </summary>
+
+          <p>
+            No. Submitting the form begins the availability review. A territory
+            is secured only after approval, acceptance of the applicable Partner
+            terms, and payment of the annual certification fee within the stated
+            time window.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            How long is the protected territory active?
+          </summary>
+
+          <p>
+            The initial certification term is one year beginning on the date the
+            annual certification fee is received. Territory protection continues
+            while certification remains active, paid, compliant, and in good
+            standing.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Can I choose what I charge my client?
+          </summary>
+
+          <p>
+            Yes. You control your retail price, deposit, payment schedule, and
+            customer-facing refund terms. You keep everything collected above
+            the applicable Signature Story Collection production fee.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            How many photographs are included?
+          </summary>
+
+          <p>
+            A standard collection includes between 1 and 20 finished
+            professional photographs selected after the photographer completes
+            the normal editing process.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Will you alter my photography?
+          </summary>
+
+          <p>
+            We do not intentionally recolor, retouch, filter, or restyle your
+            finished images. Minor cropping, scaling, or repositioning may be
+            used only when necessary to fit the 16:9 video format.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Will my logo, watermark, or signature remain visible?
+          </summary>
+
+          <p>
+            Yes. If it is already included on the submitted image, it remains
+            part of the finished video. Qualifying public collections may also
+            include a separate photography-credit end card.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Is every video public?
+          </summary>
+
+          <p>
+            Public YouTube publication is the standard option when disclosed and
+            authorized. Clients who prefer greater privacy must select the
+            unlisted option before production begins.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            What does unlisted YouTube delivery mean?
+          </summary>
+
+          <p>
+            An unlisted video is not intended to appear in ordinary public
+            search results, but anyone with the direct link may be able to view
+            or share it. No internet-based delivery method guarantees complete
+            secrecy.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Is AI used during production?
+          </summary>
+
+          <p>
+            Yes. Premium licensed AI-assisted tools may be used for lyric
+            development, music generation, editing, artwork, captions, and
+            production support. Human direction, editing, quality control,
+            assembly, and final review remain part of the process.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Is one revision included?
+          </summary>
+
+          <p>
+            Yes. One reasonable revision round is included for corrections or
+            limited changes such as a misspelled name, incorrect date, caption
+            correction, reasonable image substitution, or minor timing
+            adjustment.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            What is not included in the standard revision?
+          </summary>
+
+          <p>
+            A complete rewrite, replacement song, new genre, major video
+            restructuring, extensive image changes, or work caused by omitted
+            or incorrect information may require additional pricing or a new
+            project.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Do I receive a complimentary collection?
+          </summary>
+
+          <p>
+            Yes. Every active Certified Partner receives one complimentary
+            standard collection during each active partnership year, subject to
+            the applicable Partner terms.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Are there monthly minimums?
+          </summary>
+
+          <p>
+            There are no mandatory monthly production purchases. Production
+            charges apply only when you submit paid client projects. After the
+            90-day onboarding period, Partners are expected to remain reasonably
+            active to maintain an exclusive protected territory.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            What happens if I do not complete any sales?
+          </summary>
+
+          <p>
+            There is no sales requirement during the first 90 days. After
+            onboarding, prolonged inactivity may lead to support outreach,
+            review, and possible reopening of the protected territory if the
+            Partner remains inactive.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            How do Signature Rewards work?
+          </summary>
+
+          <p>
+            Five completed paid collections in one calendar month earn a $25
+            Production Credit, ten earn a $75 Production Credit, and twenty earn
+            a $175 Production Credit. Monthly totals reset on the first day of
+            the next month.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            When do I pay the production fee?
+          </summary>
+
+          <p>
+            For the first five paid projects, the production fee is due within
+            72 hours after delivery. After five completed and successfully paid
+            projects, a Partner in good standing may request Net 30 billing.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Who collects payment from the client?
+          </summary>
+
+          <p>
+            The photographer does. Signature Story Collection generally bills
+            the photographer, not the photographer’s client.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Is the $25 Founding Partner rate permanent?
+          </summary>
+
+          <p>
+            The first 100 approved Partners keep the $25 annual certification
+            rate while they renew on time and remain active and in good standing.
+            If certification expires or is deactivated, reentry is subject to
+            current pricing and territory availability.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            How does the 90-Day Partner Success Guarantee work?
+          </summary>
+
+          <p>
+            At the end of the first 90 days, the Partner may speak directly with
+            Founder Dan Rock. If the Partner still believes the program did not
+            provide meaningful value and chooses to leave after that
+            conversation, the annual certification fee is refunded in full and
+            Partner status and territory protection end.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Are Partner pages guaranteed to rank in Google?
+          </summary>
+
+          <p>
+            No. A Partner page creates a legitimate local business asset, but
+            search visibility depends on competition, content quality, site
+            authority, reviews, links, technical performance, and ongoing
+            optimization.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Can I market this to past clients?
+          </summary>
+
+          <p>
+            Yes. Past clients may be an excellent starting point, especially
+            when you still have access to their finished professional
+            photographs. The photographer retains control of the client list
+            and sends the message from the photography business.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section
+      class="section form-section"
+      id="territory-form"
+      aria-labelledby="territory-heading"
+    >
+      <div class="form-copy">
+        <div class="eyebrow">
+          Check Territory Availability
+        </div>
+
+        <h2 id="territory-heading">
+          Is Your Area Still Available?
+        </h2>
+
+        <p>
+          Complete the short form. We will review your requested service area
+          and contact you shortly. Initial outreach normally begins with a brief
+          text message to confirm a convenient time for a personal phone call
+          with Founder Dan Rock.
+        </p>
+
+        <p>
+          The first 100 approved photographers qualify for the grandfathered
+          $25 annual certification rate and the 90-Day Partner Success
+          Guarantee™.
+        </p>
+
+        <div class="form-points">
+          <span>No payment today</span>
+          <span>No territory reserved until approved and paid</span>
+          <span>Initial response typically within one business day</span>
+        </div>
+      </div>
+
+      <form
+        class="territory-form"
+        action="https://formspree.io/f/xwpqlypv"
+        method="POST"
+      >
+        <input
+          name="_subject"
+          type="hidden"
+          value="New Signature Story Collection Territory Request"
+        />
+
+        <input
+          name="_next"
+          type="hidden"
+          value="https://signaturestorycollection.com/success.html"
+        />
+
+        <label>
+          Full Name *
+
+          <input
+            autocomplete="name"
+            name="full_name"
+            required
+            type="text"
+          />
+        </label>
+
+        <label>
+          Photography Business Name *
+
+          <input
+            autocomplete="organization"
+            name="business_name"
+            required
+            type="text"
+          />
+        </label>
+
+        <div class="form-row">
+          <label>
+            Email Address *
+
+            <input
+              autocomplete="email"
+              name="email"
+              required
+              type="email"
+            />
+          </label>
+
+          <label>
+            Phone Number *
+
+            <input
+              autocomplete="tel"
+              name="phone"
+              required
+              type="tel"
+            />
+          </label>
+        </div>
+
+        <label>
+          Website or Portfolio Link
+
+          <input
+            name="website"
+            placeholder="https://"
+            type="url"
+          />
+        </label>
+
+        <div class="form-row three">
+          <label>
+            City *
+
+            <input
+              autocomplete="address-level2"
+              name="city"
+              required
+              type="text"
+            />
+          </label>
+
+          <label>
+            State *
+
+            <input
+              autocomplete="address-level1"
+              name="state"
+              required
+              type="text"
+            />
+          </label>
+
+          <label>
+            ZIP Code *
+
+            <input
+              autocomplete="postal-code"
+              inputmode="numeric"
+              name="zip_code"
+              required
+              type="text"
+            />
+          </label>
+        </div>
+
+        <label>
+          Primary Service Area *
+
+          <input
+            name="primary_service_area"
+            placeholder="Example: Santa Clarita, Valencia, and Newhall"
+            required
+            type="text"
+          />
+        </label>
+
+        <label>
+          Photography Specialties
+
+          <textarea
+            name="specialties"
+            placeholder="Weddings, families, maternity, newborns, seniors, memorials, pets, portraits, and more."
+            rows="4"
+          ></textarea>
+        </label>
+
+        <label>
+          How Did You Hear About Us?
+
+          <input
+            name="referral_source"
+            type="text"
+          />
+        </label>
+
+        <label class="consent">
+          <input
+            name="contact_permission"
+            required
+            type="checkbox"
+            value="yes"
+          />
+
+          <span>
+            I agree to receive a text, phone call, or email regarding territory
+            availability and the Signature Story Collection™ Partner Program. I
+            acknowledge the
+            <a href="#privacy-policy">Privacy Policy</a>,
+            <a href="#terms-of-service">Terms of Service</a>,
+            <a href="#refund-policy">Refund Policy</a>,
+            and
+            <a href="#acceptable-use">Acceptable Use Policy</a>.
+            *
+          </span>
+        </label>
+
+        <button
+          class="button button-primary submit-button"
+          type="submit"
+        >
+          Check My Territory
+        </button>
+
+        <p class="form-disclaimer">
+          Submitting this form does not reserve a territory or create a
+          partnership. Your information is used to review territory
+          availability and contact you about the Signature Story Collection™
+          Partner Program.
+        </p>
+      </form>
+    </section>
+
+    <section
+      class="final-cta"
+      aria-labelledby="final-cta-heading"
+    >
+      <img
+        src="./signature-story-logo.jpg"
+        alt="Signature Story Collection logo"
+      />
+
+      <div>
+        <div class="eyebrow">
+          Become One of the First 100
+        </div>
+
+        <h2 id="final-cta-heading">
+          Give Clients a Story They Can See, Hear, Feel, and Preserve
+        </h2>
+
+        <a
+          class="button button-primary"
+          href="#territory-form"
+        >
+          Check Territory Availability
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="privacy-policy"
+      aria-labelledby="privacy-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Privacy Policy
+        </div>
+
+        <h2 id="privacy-heading">
+          Your Information. Your Story. Your Trust.
+        </h2>
+      </div>
+
+      <p class="legal-effective-date">
+        Effective July 15, 2026
+      </p>
+
+      <div class="legal-content">
+        <h3>
+          Information We Collect
+        </h3>
+
+        <p>
+          Signature Story Collection may collect information submitted through
+          the website, territory inquiry forms, client story forms, email, text
+          messages, telephone conversations, project communications, payment
+          records, and digital files.
+        </p>
+
+        <p>
+          This information may include names, business names, email addresses,
+          phone numbers, cities, states, ZIP codes, service areas, portfolio
+          links, photography specialties, client stories, photographs, music
+          preferences, publication choices, billing information, revision
+          requests, and other project details.
+        </p>
+
+        <h3>
+          How Information Is Used
+        </h3>
+
+        <p>
+          Information may be used to review territory availability, contact
+          prospective Partners, manage certification, create Partner pages,
+          produce personalized songs and videos, deliver projects, process
+          payments, provide support, maintain records, improve services, prevent
+          fraud, and comply with legal obligations.
+        </p>
+
+        <h3>
+          Photographs and Client Stories
+        </h3>
+
+        <p>
+          Submitted photographs and stories may be used only as reasonably
+          necessary to produce, revise, host, deliver, support, and publish the
+          requested collection according to the selected publication option.
+        </p>
+
+        <h3>
+          Sharing of Information
+        </h3>
+
+        <p>
+          Signature Story Collection does not sell personal information.
+          Information may be shared with the applicable photographer, client,
+          authorized recipient, production provider, hosting provider, form
+          provider, email provider, storage provider, payment provider,
+          professional adviser, or government authority when reasonably
+          necessary.
+        </p>
+
+        <h3>
+          Third-Party Services
+        </h3>
+
+        <p>
+          The website and production process may use services including
+          Netlify, Formspree, Google Fonts, YouTube, Google, email providers,
+          cloud storage, payment processors, and licensed creative software.
+          Those providers may process information under their own terms and
+          privacy policies.
+        </p>
+
+        <h3>
+          Cookies and Analytics
+        </h3>
+
+        <p>
+          The current website does not intentionally use advertising cookies or
+          behavioral advertising trackers operated by Signature Story
+          Collection. Hosting, forms, fonts, video, and other third-party
+          services may use cookies or logs for security, functionality,
+          performance, or their own service operations.
+        </p>
+
+        <h3>
+          Retention and Security
+        </h3>
+
+        <p>
+          Information may be retained as long as reasonably necessary for
+          project production, delivery, support, billing, accounting, legal
+          compliance, fraud prevention, and dispute resolution. Reasonable
+          administrative and technical safeguards are used, but no internet
+          transmission or storage system can be guaranteed completely secure.
+        </p>
+
+        <h3>
+          Your Choices
+        </h3>
+
+        <p>
+          Subject to applicable law and reasonable identity verification, you
+          may request access, correction, deletion, or information about how
+          personal information has been used. Some information may need to be
+          retained for legal, transaction, security, or operational reasons.
+        </p>
+
+        <h3>
+          Children’s Privacy
+        </h3>
+
+        <p>
+          The website and Partner Program are intended for adults. A parent,
+          guardian, photographer, or authorized adult may submit photographs or
+          story details involving a child for a legitimate project and is
+          responsible for having the necessary authority and permissions.
+        </p>
+
+        <h3>
+          Privacy Contact
+        </h3>
+
+        <p>
+          Privacy questions and requests may be sent to
+          <a href="mailto:partners@signaturestorycollection.com?subject=Privacy%20Request">
+            partners@signaturestorycollection.com
+          </a>.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="terms-of-service"
+      aria-labelledby="terms-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Terms of Service
+        </div>
+
+        <h2 id="terms-heading">
+          Clear Standards and Clear Expectations
+        </h2>
+      </div>
+
+      <p class="legal-effective-date">
+        Effective July 15, 2026
+      </p>
+
+      <div class="legal-content">
+        <h3>
+          Acceptance
+        </h3>
+
+        <p>
+          By using this website, submitting a territory request, submitting
+          project materials, purchasing services, or participating in the
+          Partner Program, you agree to these Terms and the Privacy Policy.
+        </p>
+
+        <h3>
+          Eligibility
+        </h3>
+
+        <p>
+          You must be at least 18 years old and legally able to enter into an
+          agreement. If you act for a business, client, family member, or other
+          person, you represent that you have authority to do so.
+        </p>
+
+        <h3>
+          Territory Requests
+        </h3>
+
+        <p>
+          Submitting a form does not reserve a territory. Territory protection
+          begins only after review, approval, acceptance of the applicable
+          Partner terms, and receipt of the required annual certification fee.
+        </p>
+
+        <h3>
+          Partner Program
+        </h3>
+
+        <p>
+          Approved Partners may receive protected territory status, a dedicated
+          Partner page, marketing resources, access to the published production
+          rate, photography credit, and eligibility for applicable rewards.
+          Participation may also require acceptance of a separate Partner
+          Agreement.
+        </p>
+
+        <h3>
+          Fees and Payments
+        </h3>
+
+        <p>
+          Annual certification fees and production fees must be paid according
+          to the applicable invoice and Partner terms. For the first five paid
+          projects, the production fee is generally due within 72 hours after
+          delivery. Approved Partners may later request Net 30 billing.
+        </p>
+
+        <h3>
+          Photographer and Client Relationship
+        </h3>
+
+        <p>
+          The photographer remains responsible for photography services, client
+          agreements, pricing, deposits, payment schedules, refund policies,
+          image delivery, and customer communications.
+        </p>
+
+        <h3>
+          Project Permissions
+        </h3>
+
+        <p>
+          The submitting party represents that all submitted photographs,
+          stories, logos, names, and other materials may lawfully be provided
+          and used for the requested project and selected publication option.
+        </p>
+
+        <h3>
+          AI-Assisted Production
+        </h3>
+
+        <p>
+          Signature Story Collection may use licensed AI-assisted tools during
+          lyric development, music generation, editing, artwork, captions, and
+          production support. Creative output is subjective, and no particular
+          melody, performance, emotional reaction, or commercial result is
+          guaranteed.
+        </p>
+
+        <h3>
+          Delivery and Revisions
+        </h3>
+
+        <p>
+          One reasonable revision round is included with a standard collection.
+          Delivery dates are estimates unless specifically confirmed in
+          writing. Recipients are responsible for downloading and preserving
+          delivered files.
+        </p>
+
+        <h3>
+          Intellectual Property
+        </h3>
+
+        <p>
+          Photographers and clients retain whatever rights they lawfully hold in
+          their original materials. Signature Story Collection retains its
+          branding, templates, workflows, forms, marketing resources, and
+          production methods.
+        </p>
+
+        <h3>
+          No Guaranteed Results
+        </h3>
+
+        <p>
+          Signature Story Collection does not guarantee Partner acceptance,
+          territory value, sales, profits, search rankings, YouTube views,
+          audience growth, leads, or exclusive copyright protection for
+          AI-assisted output.
+        </p>
+
+        <h3>
+          Limitation of Liability
+        </h3>
+
+        <p>
+          To the maximum extent permitted by law, total liability arising from a
+          specific paid project will not exceed the amount paid to Signature
+          Story Collection for that project. Liability arising solely from
+          annual certification will not exceed the applicable annual
+          certification fee.
+        </p>
+
+        <h3>
+          Governing Law
+        </h3>
+
+        <p>
+          These Terms are governed by the laws of the State of California.
+          Disputes should first be addressed through good-faith written
+          communication. Any court proceeding not required elsewhere will be
+          brought in a court of competent jurisdiction in Ventura County,
+          California.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="refund-policy"
+      aria-labelledby="refund-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Refund Policy
+        </div>
+
+        <h2 id="refund-heading">
+          Fair Resolutions for Personalized Creative Work
+        </h2>
+      </div>
+
+      <p class="legal-effective-date">
+        Effective July 15, 2026
+      </p>
+
+      <div class="legal-content">
+        <h3>
+          Annual Certification Fees
+        </h3>
+
+        <p>
+          Annual certification fees are generally non-refundable after Partner
+          status and territory protection have been activated, except under the
+          90-Day Partner Success Guarantee™ or where required by law.
+        </p>
+
+        <h3>
+          90-Day Partner Success Guarantee
+        </h3>
+
+        <p>
+          A new Partner may request the guarantee at the end of the first 90
+          days. The Partner must speak personally with Founder Dan Rock, review
+          the experience, provide honest feedback, and discuss whether the
+          concern can be resolved.
+        </p>
+
+        <p>
+          If the Partner still chooses to leave after that conversation, the
+          annual certification fee will be refunded in full. Partner status,
+          territory protection, and Partner-page access will then end.
+        </p>
+
+        <h3>
+          Production Fees
+        </h3>
+
+        <p>
+          Once meaningful custom production begins, production fees are
+          generally non-refundable because personalized work has already been
+          performed.
+        </p>
+
+        <h3>
+          Cancellations
+        </h3>
+
+        <p>
+          A project canceled before meaningful production begins may qualify for
+          a full refund, partial refund, or production credit after deducting
+          nonrecoverable charges or completed administrative work. Projects
+          canceled after production begins are generally non-refundable.
+        </p>
+
+        <h3>
+          Revisions Before Refunds
+        </h3>
+
+        <p>
+          Correctable concerns should first be handled through the included
+          revision round. A complete creative restart, replacement song, new
+          genre, or major restructuring may require additional pricing.
+        </p>
+
+        <h3>
+          Production Issues
+        </h3>
+
+        <p>
+          If a legitimate production issue cannot be corrected within the agreed
+          scope, an appropriate resolution may include an additional correction,
+          production credit, partial refund, or full refund of the affected
+          production fee.
+        </p>
+
+        <h3>
+          Photographer-Client Refunds
+        </h3>
+
+        <p>
+          The photographer independently controls the retail refund policy
+          offered to the photographer’s client. A photographer’s decision to
+          refund a client does not automatically cancel the production fee owed
+          to Signature Story Collection.
+        </p>
+
+        <h3>
+          Refund Requests
+        </h3>
+
+        <p>
+          Send refund or resolution requests to
+          <a href="mailto:partners@signaturestorycollection.com?subject=Refund%20or%20Resolution%20Request">
+            partners@signaturestorycollection.com
+          </a>
+          with the Partner name, business name, project information, reason for
+          the request, and requested resolution.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="acceptable-use"
+      aria-labelledby="acceptable-use-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Acceptable Use Policy
+        </div>
+
+        <h2 id="acceptable-use-heading">
+          Use the Platform, Brand, and Services Responsibly
+        </h2>
+      </div>
+
+      <p class="legal-effective-date">
+        Effective July 15, 2026
+      </p>
+
+      <div class="legal-content">
+        <h3>
+          Permitted Use
+        </h3>
+
+        <p>
+          The website, Partner pages, forms, marketing resources, production
+          services, badges, and related systems may be used only for lawful,
+          authorized Signature Story Collection business.
+        </p>
+
+        <p>
+          Acceptable uses include honestly presenting the service, submitting
+          authorized client stories and photographs, using approved Partner
+          materials, communicating with clients, and managing legitimate
+          projects.
+        </p>
+
+        <h3>
+          Prohibited Content
+        </h3>
+
+        <p>
+          You may not submit or request content that is unlawful, threatening,
+          defamatory, fraudulent, hateful, exploitative, seriously invasive,
+          sexually exploitative, malicious, or knowingly infringing.
+        </p>
+
+        <h3>
+          Intellectual Property Abuse
+        </h3>
+
+        <p>
+          You may not submit photographs, logos, stories, music, trademarks, or
+          other materials without the necessary ownership, license, permission,
+          or authority.
+        </p>
+
+        <h3>
+          Fraud and Misrepresentation
+        </h3>
+
+        <p>
+          You may not impersonate another person, falsify business information,
+          misrepresent territory rights, submit fake client details, create
+          fraudulent orders, manipulate rewards, or make unauthorized claims on
+          behalf of Signature Story Collection.
+        </p>
+
+        <h3>
+          Spam and Unwanted Contact
+        </h3>
+
+        <p>
+          Partner resources may not be used for unlawful spam, purchased email
+          lists, deceptive messages, automated harassment, or communications
+          that violate applicable marketing and privacy laws.
+        </p>
+
+        <h3>
+          System and Security Abuse
+        </h3>
+
+        <p>
+          You may not interfere with the website, forms, hosting, accounts,
+          files, links, production systems, or security controls. Prohibited
+          activity includes unauthorized access, malware, scraping, credential
+          theft, destructive testing, and attempts to bypass restrictions.
+        </p>
+
+        <h3>
+          Brand and Partner Resource Abuse
+        </h3>
+
+        <p>
+          Confidential Partner materials may not be resold, published,
+          transferred, or distributed outside the approved photography
+          business. Certified Partner badges and claims may be used only while
+          certification is active and in good standing.
+        </p>
+
+        <h3>
+          AI and Creative Claims
+        </h3>
+
+        <p>
+          Partners may not falsely describe AI-assisted production as entirely
+          human-created, entirely automated, guaranteed to be copyrightable, or
+          guaranteed to produce a particular artistic or commercial outcome.
+        </p>
+
+        <h3>
+          Enforcement
+        </h3>
+
+        <p>
+          Violations may result in content rejection, project cancellation,
+          removal of materials, suspension of production, loss of billing
+          privileges, suspension or termination of Partner status, reopening of
+          the protected territory, refusal of future service, or legal action.
+        </p>
+
+        <h3>
+          Reporting Abuse
+        </h3>
+
+        <p>
+          Report suspected abuse, fraud, infringement, security issues, or
+          unauthorized Partner activity to
+          <a href="mailto:partners@signaturestorycollection.com?subject=Acceptable%20Use%20Concern">
+            partners@signaturestorycollection.com
+          </a>.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="partner-code-of-conduct"
+      aria-labelledby="conduct-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Certified Partner Code of Conduct
+        </div>
+
+        <h2 id="conduct-heading">
+          Protect the Client. Protect the Craft. Protect the Network.
+        </h2>
+      </div>
+
+      <div class="legal-content">
+        <h3>
+          Professional Conduct
+        </h3>
+
+        <p>
+          Certified Partners must communicate clearly, provide accurate
+          information, follow through on commitments, maintain professional
+          standards, and address mistakes directly and honestly.
+        </p>
+
+        <h3>
+          Honest Marketing
+        </h3>
+
+        <p>
+          Partners must not misrepresent pricing, deliverables, turnaround
+          times, territory rights, creative methods, guarantees, sales results,
+          search rankings, audience growth, or Partner status.
+        </p>
+
+        <h3>
+          Client Communication
+        </h3>
+
+        <p>
+          Partners should clearly explain what the collection includes, how
+          AI-assisted production is used, the 1–20 photograph limit, the
+          standard revision scope, publication choices, retail pricing, and the
+          Partner’s own payment and refund terms.
+        </p>
+
+        <h3>
+          Privacy and Confidentiality
+        </h3>
+
+        <p>
+          Client stories, photographs, contact information, project files,
+          private links, and communications must be handled with reasonable care
+          and used only for authorized business and production purposes.
+        </p>
+
+        <h3>
+          Territory Respect
+        </h3>
+
+        <p>
+          Partners must respect other approved territories and may not falsely
+          claim exclusivity, interfere with another Partner’s active client
+          relationship, or use misleading addresses and local pages to claim
+          unapproved markets.
+        </p>
+
+        <h3>
+          Respectful Behavior
+        </h3>
+
+        <p>
+          Harassment, threats, discrimination, retaliation, fraud, impersonation,
+          theft, exploitation, and malicious conduct are prohibited.
+        </p>
+
+        <h3>
+          Corrective Action
+        </h3>
+
+        <p>
+          Violations may result in guidance, warning, required correction,
+          suspension, loss of billing privileges, territory reopening, or
+          termination of Certified Partner status.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="disclaimer"
+      aria-labelledby="disclaimer-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Business and Creative Disclaimer
+        </div>
+
+        <h2 id="disclaimer-heading">
+          Results Depend on the Partner, the Client, and the Market
+        </h2>
+      </div>
+
+      <div class="legal-content">
+        <p>
+          Earnings examples, pricing examples, profit illustrations, marketing
+          ideas, search visibility, YouTube exposure, and sales strategies are
+          provided for general informational purposes only.
+        </p>
+
+        <p>
+          Signature Story Collection does not guarantee sales, income, profit,
+          territory value, client demand, search rankings, views, leads,
+          subscribers, referrals, or return on investment.
+        </p>
+
+        <p>
+          Creative output is subjective. No particular melody, vocal
+          performance, arrangement, emotional response, client reaction, or
+          copyright outcome is guaranteed.
+        </p>
+
+        <p>
+          Website content does not constitute legal, tax, accounting, financial,
+          insurance, employment, or investment advice. Partners are responsible
+          for their own contracts, taxes, insurance, business licensing, client
+          policies, and professional advisers.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="accessibility"
+      aria-labelledby="accessibility-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Accessibility Statement
+        </div>
+
+        <h2 id="accessibility-heading">
+          We Want the Website to Be Usable by Everyone
+        </h2>
+      </div>
+
+      <div class="legal-content">
+        <p>
+          Signature Story Collection aims to provide a website experience that
+          is accessible and usable across common devices, browsers, screen
+          sizes, keyboards, and assistive technologies.
+        </p>
+
+        <p>
+          Accessibility work may include readable contrast, scalable text,
+          keyboard-friendly navigation, descriptive labels, logical headings,
+          visible focus states, mobile responsiveness, and meaningful image
+          alternatives.
+        </p>
+
+        <p>
+          Some third-party tools, forms, fonts, video platforms, or embedded
+          services may be controlled by outside providers and may not fully meet
+          every accessibility standard.
+        </p>
+
+        <p>
+          To report an accessibility issue or request information in another
+          reasonable format, email
+          <a href="mailto:partners@signaturestorycollection.com?subject=Accessibility%20Request">
+            partners@signaturestorycollection.com
+          </a>.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="copyright-policy"
+      aria-labelledby="copyright-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Copyright and Intellectual Property
+        </div>
+
+        <h2 id="copyright-heading">
+          Respect Original Work and Authorized Use
+        </h2>
+      </div>
+
+      <div class="legal-content">
+        <p>
+          Photographers, clients, and Partners must submit only photographs,
+          logos, stories, names, and other materials they own, license, or have
+          permission to use.
+        </p>
+
+        <p>
+          Signature Story Collection retains ownership of its website content,
+          branding, trademarks, badges, templates, forms, workflows, production
+          methods, Partner resources, and proprietary business systems.
+        </p>
+
+        <p>
+          Finished collections are provided for client personal use and the
+          photographer’s ordinary client delivery and portfolio-related
+          promotion, subject to applicable platform and software restrictions.
+        </p>
+
+        <p>
+          No promise of exclusive copyright ownership, copyright registration,
+          work-made-for-hire status, or exclusivity is made unless separately
+          confirmed in a signed writing.
+        </p>
+
+        <p>
+          Copyright concerns may be sent to
+          <a href="mailto:partners@signaturestorycollection.com?subject=Copyright%20Concern">
+            partners@signaturestorycollection.com
+          </a>
+          with identification of the work, the disputed use, contact
+          information, and a good-faith explanation of the claimed rights.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section legal-section"
+      id="cookie-policy"
+      aria-labelledby="cookie-heading"
+    >
+      <div class="section-heading">
+        <div class="eyebrow">
+          Cookie Policy
+        </div>
+
+        <h2 id="cookie-heading">
+          Limited Website Technologies and Third-Party Services
+        </h2>
+      </div>
+
+      <div class="legal-content">
+        <p>
+          The current website does not intentionally use advertising cookies or
+          Signature Story Collection-operated behavioral advertising trackers.
+        </p>
+
+        <p>
+          Hosting providers, form services, fonts, video platforms, security
+          tools, and other third-party services may use cookies, logs, pixels,
+          or similar technologies for functionality, security, fraud prevention,
+          performance, or their own service operations.
+        </p>
+
+        <p>
+          You may manage or block cookies through your browser settings.
+          Disabling certain technologies may affect website or form
+          functionality.
+        </p>
+
+        <p>
+          If analytics, advertising, remarketing, or additional tracking tools
+          are added later, this section and any legally required consent
+          controls will be updated.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>
+        Signature Story Collection™
+      </strong>
+
+      <span>
+        Every Beautiful Photograph Deserves a Beautiful Soundtrack.
+      </span>
+    </div>
+
+    <div class="footer-links">
+      <a href="#top">Home</a>
+      <a href="#territory-form">Partner Inquiry</a>
+      <a href="#privacy-policy">Privacy</a>
+      <a href="#terms-of-service">Terms</a>
+      <a href="#refund-policy">Refunds</a>
+      <a href="#acceptable-use">Acceptable Use</a>
+      <a href="#partner-code-of-conduct">Code of Conduct</a>
+      <a href="#accessibility">Accessibility</a>
+      <a href="#copyright-policy">Copyright</a>
+      <a href="#cookie-policy">Cookies</a>
+      <a href="mailto:partners@signaturestorycollection.com">Contact</a>
+    </div>
+
+    <p>
+      © <span id="year"></span> Signature Story Collection™. All rights
+      reserved.
+    </p>
+  </footer>
+
+  <script>
+// Signature Story Collection — site behavior
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Footer year
+  var yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Mobile menu toggle
+  var toggle = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('primary-navigation');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.textContent = isOpen ? 'Close' : 'Menu';
     });
-  });
-}
 
-const year = document.getElementById('year');
-if (year) year.textContent = new Date().getFullYear();
-</script>
+    // Close menu after tapping a link (mobile)
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = 'Menu';
+      });
+    });
+  }
+});
+
+  </script>
 </body>
 </html>
