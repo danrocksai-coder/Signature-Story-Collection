@@ -6,7 +6,7 @@
 
   <meta
     name="description"
-    content="Your Signature Story Collection territory request has been received. We will review your photography business and requested service area, then contact you about the Certified Partner Program."
+    content="Your Signature Story Collection territory request has been received. Learn what happens next in the Certified Photographer Partner approval process."
   />
 
   <title>Territory Request Received | Signature Story Collection</title>
@@ -15,7 +15,6 @@
 
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet"
@@ -45,16 +44,10 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background:
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(201, 169, 107, 0.15),
-          transparent 35%
-        ),
-        linear-gradient(145deg, #050505, #151515 55%, #080808);
+      background: var(--black);
       color: var(--cream);
       font-family: var(--sans);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     img {
@@ -67,11 +60,14 @@
     }
 
     .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px clamp(18px, 4vw, 60px);
-      background: rgba(10, 10, 10, 0.9);
+      padding: 10px clamp(18px, 4vw, 60px);
+      background: rgba(10, 10, 10, 0.92);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
@@ -93,50 +89,41 @@
       object-fit: contain;
     }
 
-    .home-link {
-      padding: 10px 16px;
-      border: 1px solid var(--gold);
-      color: var(--cream);
-      font-size: 0.76rem;
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.74rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.09em;
     }
 
+    .header-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .home-link {
+      padding: 10px 16px;
+      border: 1px solid var(--gold);
+    }
+
     .home-link:hover {
       background: var(--gold);
-      color: #111;
+      color: #111 !important;
     }
 
-    main {
-      min-height: calc(100vh - 94px);
-      display: grid;
-      place-items: center;
-      padding: 70px 22px;
-    }
-
-    .success-card {
-      width: 100%;
-      max-width: 850px;
-      padding: clamp(36px, 7vw, 70px);
+    .hero {
+      padding: 90px 22px 70px;
       text-align: center;
-      border: 1px solid var(--gold);
-      background: rgba(16, 16, 16, 0.94);
-      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
-    }
-
-    .success-mark {
-      display: grid;
-      place-items: center;
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 25px;
-      border: 1px solid var(--gold);
-      border-radius: 50%;
-      color: var(--gold-light);
-      font-family: var(--serif);
-      font-size: 2.6rem;
-      font-weight: 700;
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(201, 169, 107, 0.16),
+          transparent 35%
+        ),
+        linear-gradient(145deg, #050505, #151515 55%, #080808);
+      border-bottom: 1px solid var(--line);
     }
 
     .eyebrow {
@@ -149,75 +136,169 @@
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
       margin-top: 0;
       font-family: var(--serif);
-      line-height: 1.05;
+      line-height: 1.08;
     }
 
     h1 {
-      margin-bottom: 24px;
-      font-size: clamp(3rem, 8vw, 5.8rem);
+      max-width: 900px;
+      margin: 0 auto 24px;
+      font-size: clamp(3.1rem, 8vw, 6.2rem);
       font-weight: 600;
     }
 
-    .lead {
-      max-width: 680px;
-      margin: 0 auto 38px;
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
       color: #d4cec2;
       font-size: clamp(1rem, 2vw, 1.18rem);
     }
 
-    .next-steps {
+    .confirmation-mark {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin: 40px 0;
-      text-align: left;
+      place-items: center;
+      width: 76px;
+      height: 76px;
+      margin: 32px auto 0;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: rgba(23, 23, 23, 0.78);
     }
 
-    .step {
-      padding: 24px 20px;
+    .content {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 100px;
+    }
+
+    .intro-box {
+      max-width: 900px;
+      margin: 0 auto 46px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid var(--gold);
+      background: linear-gradient(145deg, #1b1b1b, #101010);
+    }
+
+    .intro-box h2 {
+      margin-bottom: 14px;
+      color: var(--gold-light);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .intro-box p {
+      margin: 0;
+      color: #d2cabf;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 46px;
+    }
+
+    .step-card {
+      padding: 30px 24px;
       border-top: 2px solid var(--gold);
       background: var(--charcoal);
     }
 
     .step-number {
       display: block;
+      margin-bottom: 18px;
       color: var(--gold-light);
       font-family: var(--serif);
-      font-size: 2rem;
+      font-size: 2.4rem;
       font-weight: 700;
     }
 
-    .step h2 {
-      margin: 12px 0 9px;
-      font-size: 1.45rem;
+    .step-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.7rem;
     }
 
-    .step p {
+    .step-card p {
       margin: 0;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.9rem;
     }
 
-    .important-note {
-      margin: 35px 0;
-      padding: 22px;
-      border-left: 3px solid var(--gold);
-      background: #121212;
-      text-align: left;
+    .founding-box {
+      max-width: 950px;
+      margin: 0 auto 42px;
+      padding: 34px;
+      border: 1px solid var(--gold);
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(201, 169, 107, 0.12),
+          transparent 35%
+        ),
+        #111;
     }
 
-    .important-note strong {
+    .founding-box h2 {
+      margin-bottom: 14px;
+      color: var(--gold-light);
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .founding-box > p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .benefit-grid span {
+      padding: 16px 12px;
+      border: 1px solid var(--line);
+      background: rgba(23, 23, 23, 0.9);
+      color: #d7d0c5;
+      text-align: center;
+      font-size: 0.78rem;
+    }
+
+    .benefit-grid strong {
       display: block;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
       color: var(--gold-light);
       font-family: var(--serif);
-      font-size: 1.4rem;
+      font-size: 1.35rem;
     }
 
-    .important-note p {
+    .notice {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 26px;
+      border-left: 3px solid var(--gold);
+      background: #151515;
+    }
+
+    .notice strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--gold-light);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+    }
+
+    .notice p {
       margin: 0;
       color: var(--muted);
     }
@@ -227,20 +308,20 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
-      margin-top: 36px;
+      margin-top: 40px;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 52px;
-      padding: 13px 25px;
+      min-height: 50px;
+      padding: 12px 23px;
       border: 1px solid transparent;
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.09em;
     }
 
     .button-primary {
@@ -254,7 +335,6 @@
 
     .button-secondary {
       border-color: rgba(255, 255, 255, 0.35);
-      color: var(--cream);
     }
 
     .button-secondary:hover {
@@ -263,26 +343,67 @@
     }
 
     .contact-note {
-      margin-top: 28px;
+      margin-top: 24px;
       color: var(--muted);
+      text-align: center;
       font-size: 0.82rem;
     }
 
     .contact-note a {
       color: var(--gold-light);
       text-decoration: underline;
-      text-underline-offset: 3px;
+      text-underline-offset: 4px;
     }
 
     footer {
-      padding: 30px 22px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 25px;
+      align-items: end;
+      padding: 42px clamp(22px, 6vw, 90px);
       border-top: 1px solid var(--line);
       color: var(--muted);
-      text-align: center;
       font-size: 0.76rem;
     }
 
-    @media (max-width: 760px) {
+    footer strong,
+    footer span {
+      display: block;
+    }
+
+    footer strong {
+      color: var(--cream);
+      font-family: var(--serif);
+      font-size: 1.45rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    footer p {
+      grid-column: 1 / -1;
+      margin: 8px 0 0;
+    }
+
+    @media (max-width: 1050px) {
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
       .brand span {
         display: none;
       }
@@ -292,21 +413,36 @@
         height: 58px;
       }
 
-      main {
-        padding: 45px 18px;
+      .header-links a:not(.home-link) {
+        display: none;
       }
 
-      .success-card {
-        padding: 38px 22px;
+      .hero {
+        padding: 70px 20px 55px;
       }
 
-      .next-steps {
+      .content {
+        width: min(100% - 30px, 1120px);
+        padding: 55px 0 75px;
+      }
+
+      .intro-box,
+      .founding-box,
+      .notice {
+        padding: 24px 20px;
+      }
+
+      .steps-grid,
+      .benefit-grid {
         grid-template-columns: 1fr;
       }
 
-      .home-link {
-        padding: 9px 12px;
-        font-size: 0.68rem;
+      footer {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
       }
     }
   </style>
@@ -326,67 +462,112 @@
       <span>Signature Story Collection</span>
     </a>
 
-    <a class="home-link" href="./index.html">Return Home</a>
+    <nav class="header-links" aria-label="Success page navigation">
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a class="home-link" href="./index.html">Return Home</a>
+    </nav>
   </header>
 
   <main>
-    <section class="success-card">
-      <div class="success-mark" aria-hidden="true">✓</div>
-
+    <section class="hero">
       <div class="eyebrow">Territory Request Received</div>
 
       <h1>Your Next Chapter Starts Here.</h1>
 
-      <p class="lead">
+      <p>
         Thank you for your interest in becoming a Certified Signature Story
-        Collection Partner. Your information has been received, and we will now
+        Collection Partner. Your request has been received, and we will now
         review your photography business, requested service area, and territory
         availability.
       </p>
 
-      <div class="next-steps">
-        <article class="step">
+      <div class="confirmation-mark" aria-hidden="true">✓</div>
+    </section>
+
+    <section class="content">
+      <div class="intro-box">
+        <div class="eyebrow">What Happens Next</div>
+
+        <h2>A Personal Review, Not an Automated Approval</h2>
+
+        <p>
+          Every territory request is reviewed individually. Our goal is to
+          protect each approved photographer’s service area while making sure
+          the Signature Story Collection Partner Program is the right fit for
+          both sides.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
           <span class="step-number">1</span>
-          <h2>We Review Your Area</h2>
+          <h3>Territory Review</h3>
           <p>
-            We will check your requested city, ZIP code, and surrounding service
-            area to determine whether the territory is currently available.
+            We review your requested city, ZIP code, and surrounding service
+            area to determine whether the protected territory is currently
+            available.
           </p>
         </article>
 
-        <article class="step">
+        <article class="step-card">
           <span class="step-number">2</span>
-          <h2>Watch for a Text</h2>
+          <h3>Watch for a Text</h3>
           <p>
             Initial outreach normally begins with a brief text message to
             confirm your interest and find a convenient time to speak.
           </p>
         </article>
 
-        <article class="step">
+        <article class="step-card">
           <span class="step-number">3</span>
-          <h2>Speak With Dan</h2>
+          <h3>Speak With Dan</h3>
           <p>
             Founder Dan Rock will personally answer your questions, explain the
-            Partner Program, and discuss the next steps if your territory is
-            available.
+            Partner Program, and learn more about your photography business.
+          </p>
+        </article>
+
+        <article class="step-card">
+          <span class="step-number">4</span>
+          <h3>Secure Your Territory</h3>
+          <p>
+            If approved, you will receive instructions for accepting the Partner
+            terms, paying the annual certification fee, and securing your
+            protected territory.
           </p>
         </article>
       </div>
 
-      <div class="important-note">
+      <section class="founding-box">
+        <div class="eyebrow">Founding Partner Reminder</div>
+
+        <h2>The First 100 Approved Photographers Receive More</h2>
+
+        <p>
+          Founding Partners receive the lowest annual certification rate and
+          additional benefits designed to help them launch, sell, and deliver
+          Signature Story Collection to their clients.
+        </p>
+
+        <div class="benefit-grid">
+          <span><strong>$25/year</strong>Grandfathered annual certification</span>
+          <span><strong>Protected</strong>Local service territory</span>
+          <span><strong>Your Page</strong>Dedicated partner landing page</span>
+          <span><strong>$50</strong>Standard production rate</span>
+          <span><strong>90 Days</strong>Partner Success Guarantee</span>
+        </div>
+      </section>
+
+      <div class="notice">
         <strong>Your territory is not reserved yet.</strong>
+
         <p>
           Submitting the inquiry begins the review process. A protected
           territory is secured only after approval, acceptance of the Partner
-          terms, and payment of the applicable annual certification fee.
+          terms, and payment of the applicable annual certification fee within
+          the stated time window.
         </p>
       </div>
-
-      <p class="lead">
-        Most inquiries receive an initial response within one business day.
-        Please keep an eye on your text messages, email, and voicemail.
-      </p>
 
       <div class="button-row">
         <a class="button button-primary" href="./index.html">
@@ -402,16 +583,33 @@
       </div>
 
       <p class="contact-note">
-        Need to add something to your request? Email
+        Most inquiries receive an initial response within one business day.
+        Please monitor your text messages, email, and voicemail. To add
+        information to your request, email
         <a href="mailto:partners@signaturestorycollection.com">
           partners@signaturestorycollection.com
-        </a>
+        </a>.
       </p>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Signature Story Collection™. All rights reserved.
+    <div>
+      <strong>Signature Story Collection™</strong>
+      <span>Every Beautiful Photograph Deserves a Beautiful Soundtrack.</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="./terms-of-service.html">Terms of Service</a>
+      <a href="mailto:partners@signaturestorycollection.com">Contact</a>
+    </div>
+
+    <p>
+      © <span id="year"></span> Signature Story Collection™. All rights
+      reserved.
+    </p>
   </footer>
 
   <script>
